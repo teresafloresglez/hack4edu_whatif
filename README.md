@@ -81,14 +81,7 @@ src/
   games/     un archivo por minijuego + registry.ts
   ui/        app.ts (niño), teacher.ts (docente), session.ts (orquesta una partida)
 tests/       Vitest + happy-dom; bot.ts juega tocando al azar en todos los niveles
-.claude/agents/qa-tester.md   agente de QA reutilizable
 ```
-
-## Agente de QA
-
-`.claude/agents/qa-tester.md` define un agente de Claude Code que prueba la app en ciclos
-(pruebas → revisión de código → partida real en el navegador → arreglo + prueba de regresión) hasta que no
-quedan fallos graves. Pídeselo a Claude Code tras cada cambio importante: *"usa el agente qa-tester"*.
 
 ## Limitaciones conocidas
 

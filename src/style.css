@@ -801,3 +801,119 @@ body[data-screen="teacher"] #app { max-width: 1200px; }
 .hub-btn.robi-btn > .ic { background: #dcf5f1; }
 .free-games .game-tile { position: relative; }
 .new-badge { position: absolute; top: 8px; left: 8px; background: #ff7043; color: #fff; font-size: 13px; font-weight: 800; border-radius: 999px; padding: 2px 9px; }
+
+/* ══ Adaptación a móvil y tablet ═══════════════════════════════════════ */
+/* Muescas y bordes redondeados de los móviles */
+.screen { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); padding-bottom: max(32px, env(safe-area-inset-bottom)); }
+.screen > .topbar:first-child, .home-header { padding-top: env(safe-area-inset-top); }
+
+/* Móvil pequeño (≤ 380 px): más sitio para el texto */
+@media (max-width: 380px) {
+  .screen { padding-left: 10px; padding-right: 10px; gap: 12px; }
+  .instruction { gap: 8px; padding: 10px; }
+  .instruction-icon { display: none; }
+  .instruction-text { font-size: 17px; }
+  .speak-btn { width: 42px; height: 42px; }
+  .topbar-title { font-size: 17px; }
+  .icon-btn { width: 46px; height: 46px; }
+  .dpad-btn { width: 52px; height: 52px; }
+  .hint-btn { width: 58px; height: 58px; }
+  .avatar-btn { width: 128px; }
+  .robi-bubble p { font-size: 16px; }
+}
+
+/* Tablet (≥ 700 px de ancho): todo más grande y más aprovechado */
+@media (min-width: 700px) {
+  body:not([data-screen="teacher"]) #app { max-width: 980px; }
+  .screen { gap: 24px; padding-top: 20px; }
+  .icon-btn { width: 64px; height: 64px; }
+  .icon-btn .ic svg { width: 40px; height: 40px; }
+  .topbar-title { font-size: 24px; }
+  .stars-pill, .powers-pill { font-size: 21px; min-height: 52px; padding: 8px 18px 8px 12px; }
+  .brand-logo { width: 150px; }
+  .logo { font-size: 72px; }
+  .brand-tagline { font-size: 22px; }
+  .home-hint { font-size: 26px; }
+  .lang-btn { font-size: 19px; min-height: 60px; }
+  .avatar-btn { width: 180px; }
+  .avatar-circle { width: 120px; height: 120px; }
+  .avatar-circle .avatar-art svg { width: 96px; height: 96px; }
+  .avatar-name { font-size: 19px; }
+  .hub-avatar { width: 180px; height: 180px; }
+  .hub-avatar .avatar-art svg { width: 140px; height: 140px; }
+  .hub-name { font-size: 32px; }
+  .hub-btn { font-size: 26px; padding: 20px 24px; }
+  .hub-btn .ic svg { width: 80px; height: 80px; }
+  .theme-grid, .next-games { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 18px; }
+  .theme-btn .ic svg, .game-tile .ic svg { width: 100px; height: 100px; }
+  .theme-name, .game-name { font-size: 21px; }
+  .age-num { font-size: 56px; }
+  .region-btn { min-height: 120px; }
+  .region-name { font-size: 26px; }
+  .instruction { padding: 16px 20px; }
+  .instruction-text, .question-text { font-size: 23px; }
+  .instruction-icon .ic svg { width: 56px; height: 56px; }
+  .choice-btn { min-height: 120px; }
+  .emoji-btn { font-size: 68px; }
+  .idea-card { min-height: 140px; }
+  .idea-text { font-size: 18px; }
+  .board { width: min(100%, 600px, max(320px, calc(100vh - 380px))); }
+  .dpad-btn { width: 84px; height: 84px; }
+  .dpad-btn .ic svg { width: 52px; height: 52px; }
+  .hint-btn { width: 88px; height: 88px; }
+  .robi-bubble p { font-size: 23px; }
+  .robi-art svg { width: 120px; height: 120px; }
+  .robi-scene { font-size: 84px; }
+  .robi-judge { min-height: 150px; font-size: 24px; }
+  .robi-judge .ic svg { width: 56px; height: 56px; }
+  .robi-option { font-size: 22px; min-height: 80px !important; }
+  .power-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .big-btn { font-size: 30px; min-height: 76px; }
+  .reward-stars { font-size: 110px; }
+  .reward-msg { font-size: 32px; }
+}
+
+/* Móvil en horizontal (poca altura): compacto y sin tener que desplazarse */
+@media (orientation: landscape) and (max-height: 520px) {
+  .screen { gap: 10px; padding-top: 6px; padding-bottom: 16px; }
+  .topbar { min-height: 48px; }
+  .icon-btn { width: 44px; height: 44px; }
+  .home-header .brand { flex-direction: row; gap: 14px; }
+  .brand-logo { width: 64px; }
+  .logo { font-size: 38px; }
+  .brand-tagline { font-size: 15px; }
+  .brand > div, .brand .brand-tagline { text-align: left; }
+  .home-hint { font-size: 18px; }
+  .avatar-btn { width: 116px; padding: 8px 6px; }
+  .avatar-circle { width: 70px; height: 70px; }
+  .avatar-circle .avatar-art svg { width: 56px; height: 56px; }
+  .avatar-btn.add { min-height: 110px; }
+  .hub-hero { flex-direction: row; justify-content: center; gap: 16px; }
+  .hub-avatar, .hub-avatar.small { width: 84px; height: 84px; border-width: 3px; }
+  .hub-avatar .avatar-art svg { width: 64px; height: 64px; }
+  .hub-btn { padding: 10px 14px; font-size: 19px; }
+  .hub-btn .ic svg { width: 44px; height: 44px; }
+  .instruction { padding: 8px 12px; }
+  .instruction-text { font-size: 16px; }
+  .instruction-icon .ic svg { width: 32px; height: 32px; }
+  .choice-btn { min-height: 70px; }
+  .robi-art svg { width: 60px; height: 60px; }
+  .robi-bubble { padding: 8px 12px; }
+  .robi-bubble p { font-size: 16px; }
+  .robi-scene { font-size: 40px; padding: 4px; }
+  .robi-judge { min-height: 64px; flex-direction: row; font-size: 18px; }
+  .robi-judge .ic svg { width: 32px; height: 32px; }
+  .robi-option { min-height: 48px !important; padding: 8px 12px !important; font-size: 16px; }
+  /* El camino: tablero a la izquierda y mandos a la derecha */
+  .stage:has(> .board) { display: grid; grid-template-columns: auto 1fr; grid-template-areas: 'ins ins' 'board ctrl'; align-items: center; gap: 10px 20px; }
+  .stage:has(> .board) > .instruction { grid-area: ins; }
+  .stage:has(> .board) > .board { grid-area: board; width: min(60vw, calc(100vh - 150px)); margin: 0; }
+  .stage:has(> .board) > .controls-row { grid-area: ctrl; }
+  .dpad-btn { width: 54px; height: 54px; }
+  .reward-stars { font-size: 56px; padding-top: 4px; }
+}
+@media (max-width: 380px) {
+  .robi-row { gap: 6px; align-items: flex-start; }
+  .robi-art svg { width: 52px; height: 52px; }
+  .robi-bubble { padding: 10px; }
+}

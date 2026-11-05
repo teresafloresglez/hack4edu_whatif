@@ -71,6 +71,8 @@ async function play(ctx: GameContext): Promise<GameOutcome> {
   const colorsUsed = new Set<string>();
   let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
   let drawing = false;
+  let erasing = false;
+  let erases = 0;
 
   if (g) {
     g.fillStyle = '#ffffff';
@@ -111,18 +113,24 @@ async function play(ctx: GameContext): Promise<GameOutcome> {
       /* nada */
     }
     const [x, y] = toLocal(e);
-    g.strokeStyle = color;
-    g.fillStyle = color;
-    g.lineWidth = ctx.ageBand === 'young' ? 10 : 7;
+    // Goma: pinta de blanco con un trazo más grueso. No cuenta como trazo ni como color.
+    const ink = erasing ? '#ffffff' : color;
+    g.strokeStyle = ink;
+    g.fillStyle = ink;
+    g.lineWidth = erasing ? 24 : ctx.ageBand === 'young' ? 10 : 7;
     // Un toque sin arrastrar también deja un punto.
     g.beginPath();
     g.arc(x, y, g.lineWidth / 2, 0, Math.PI * 2);
     g.fill();
     lastX = x; lastY = y;
-    grow(x, y);
-    strokes++;
-    colorsUsed.add(color);
-    if (!firstDraw) firstDraw = now();
+    if (erasing) {
+      erases++;
+    } else {
+      grow(x, y);
+      strokes++;
+      colorsUsed.add(color);
+      if (!firstDraw) firstDraw = now();
+    }
     e.preventDefault();
   });
   canvas.addEventListener('pointermove', (e) => {
@@ -134,8 +142,10 @@ async function play(ctx: GameContext): Promise<GameOutcome> {
     g.lineTo(x, y);
     g.stroke();
     lastX = x; lastY = y;
-    grow(x, y);
-    lastDraw = now();
+    if (!erasing) {
+      grow(x, y);
+      lastDraw = now();
+    }
   });
   const end = (e: PointerEvent) => {
     if (e.pointerId === activePointer) drawing = false;
@@ -144,16 +154,23 @@ async function play(ctx: GameContext): Promise<GameOutcome> {
   canvas.addEventListener('pointercancel', end);
   canvas.addEventListener('pointerleave', end);
 
+  const select = (b: HTMLButtonElement) => {
+    palette.querySelectorAll('.swatch').forEach((s) => s.classList.remove('active'));
+    b.classList.add('active');
+    ctx.sfx('tap');
+  };
+  const eraser = h('button', { class: 'swatch eraser', type: 'button', 'data-tool': 'eraser', 'aria-label': tr({ es: 'Goma de borrar', en: 'Eraser', fr: 'Gomme' }), title: tr({ es: 'Goma de borrar', en: 'Eraser', fr: 'Gomme' }) });
+  eraser.innerHTML = '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#263238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5l4 4-10 10H6.5l-3-3z" fill="#F8BBD0"/><path d="M11 8l5 5" /><path d="M10 20.5h10"/></svg>';
+  eraser.onclick = () => { erasing = true; select(eraser); };
   const palette = h('div', { class: 'palette' }, ...PALETTE.map((c, i) => {
     const b = h('button', { class: 'swatch' + (i === 0 ? ' active' : ''), type: 'button', style: { background: c }, 'aria-label': tr({ es: 'color', en: 'colour', fr: 'couleur' }) });
     b.onclick = () => {
       color = c;
-      palette.querySelectorAll('.swatch').forEach((s) => s.classList.remove('active'));
-      b.classList.add('active');
-      ctx.sfx('tap');
+      erasing = false;
+      select(b);
     };
     return b;
-  }));
+  }), eraser);
   const done = doneButton();
   render(ctx,
     instruction(ctx, 'garabato', tr({ es: '¿Qué puede ser esta raya? ¡Termina el dibujo como tú quieras! Usa muchos colores.', en: 'What could this line be? Finish the drawing however you like! Use lots of colours.', fr: 'Que pourrait être ce trait ? Termine le dessin comme tu veux ! Utilise plein de couleurs.' })),
@@ -272,7 +289,7 @@ async function play(ctx: GameContext): Promise<GameOutcome> {
       obs('elaboracion', elaboration, strokes === 0 ? 0.5 : 1),
       obs('originalidad', originality, label ? 0.5 : voiceSaid ? 0.3 : 0.2),
     ],
-    metrics: { strokes, colors: colorsUsed.size, coverage: Math.round(coverage * 100) / 100, extension, elaboration, originality, saidByVoice: voiceSaid ? 1 : 0 },
+    metrics: { strokes, erases, colors: colorsUsed.size, coverage: Math.round(coverage * 100) / 100, extension, elaboration, originality, saidByVoice: voiceSaid ? 1 : 0 },
     tags: { ideaIds: label ? ['g_' + label] : [], promptId: squiggleId },
     evidence,
     durationMs: now() - start,

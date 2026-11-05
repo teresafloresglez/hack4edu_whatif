@@ -348,3 +348,33 @@ describe('Informe en móvil (360 px)', () => {
     expect(mobile).toMatch(/\.report \.history th, \.report \.history td \{[^}]*padding: 6px 3px/);
   });
 });
+
+describe('Pantalla de edad en móvil', () => {
+  it('las edades se reparten en filas que caben (sin columnas fijas que empujen el 10 fuera)', async () => {
+    const fs: { readFileSync(path: string, enc: 'utf8'): string } = await import(/* @vite-ignore */ ['node', 'fs'].join(':'));
+    const css = fs.readFileSync('src/style.css', 'utf8');
+    expect(css).toMatch(/\.age-grid \{ display: flex !important; flex-wrap: wrap/);
+    expect(css).toMatch(/@media \(max-width: 600px\) \{\s*\.age-btn \{ flex-basis: calc\(\(100% - 20px\) \/ 3\); \}/);
+  });
+});
+
+describe('Garabato: goma de borrar', () => {
+  it('hay una goma en la paleta y al elegirla queda seleccionada; volver a un color la desactiva', async () => {
+    const { garabatoGame } = await import('../src/games/garabato');
+    const { ctx, ac } = makeCtx(garabatoGame);
+    const p = garabatoGame.play(ctx);
+    await tick(5);
+    const eraser = ctx.root.querySelector<HTMLButtonElement>('[data-tool="eraser"]')!;
+    expect(eraser).not.toBeNull();
+    expect(eraser.getAttribute('aria-label')).toBe('Goma de borrar');
+    eraser.click();
+    expect(eraser.classList.contains('active')).toBe(true);
+    const red = ctx.root.querySelectorAll<HTMLButtonElement>('.swatch:not(.eraser)')[1];
+    red.click();
+    expect(eraser.classList.contains('active')).toBe(false);
+    expect(red.classList.contains('active')).toBe(true);
+    ac.abort();
+    const out = await p;
+    expect(out.abandoned).toBe(true);
+  });
+});

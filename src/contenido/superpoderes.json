@@ -1,0 +1,27 @@
+{
+  "ui": {
+    "title": { "es": "Mis superpoderes", "en": "My superpowers", "fr": "Mes super-pouvoirs" },
+    "pillAria": { "es": "Mis superpoderes: {n}", "en": "My superpowers: {n}", "fr": "Mes super-pouvoirs : {n}" },
+    "say": { "es": "¡Estos son tus superpoderes! Toca uno para escucharlo.", "en": "These are your superpowers! Tap one to hear it.", "fr": "Voici tes super-pouvoirs ! Touches-en un pour l’écouter." },
+    "sayNone": { "es": "¡Tus superpoderes están escondidos! Juega y los irás descubriendo.", "en": "Your superpowers are hidden! Play and you will discover them.", "fr": "Tes super-pouvoirs sont cachés ! Joue et tu vas les découvrir." },
+    "mystery": { "es": "Por descubrir", "en": "Still to discover", "fr": "À découvrir" },
+    "mysterySay": { "es": "Este superpoder aún está escondido. ¡Sigue jugando para descubrirlo!", "en": "This superpower is still hidden. Keep playing to discover it!", "fr": "Ce super-pouvoir est encore caché. Continue à jouer pour le découvrir !" },
+    "new": { "es": "¡Nuevo superpoder!", "en": "New superpower!", "fr": "Nouveau super-pouvoir !" },
+    "newSay": { "es": "¡Has conseguido un nuevo superpoder: {name}!", "en": "You got a new superpower: {name}!", "fr": "Tu as gagné un nouveau super-pouvoir : {name} !" }
+  },
+  "powers": {
+    "atencion": { "emoji": "🦅", "color": "#d8f3dc", "name": { "es": "Ojo de águila", "en": "Eagle eye", "fr": "Œil d’aigle" }, "text": { "es": "Ves los detalles que a otros se les escapan.", "en": "You spot the details others miss.", "fr": "Tu vois les détails que les autres ratent." } },
+    "memoria": { "emoji": "🐘", "color": "#e2ecf9", "name": { "es": "Memoria de elefante", "en": "Elephant memory", "fr": "Mémoire d’éléphant" }, "text": { "es": "Recuerdas dónde está cada cosa.", "en": "You remember where everything is.", "fr": "Tu te souviens où est chaque chose." } },
+    "logica": { "emoji": "🔎", "color": "#fff1c1", "name": { "es": "Mente detective", "en": "Detective mind", "fr": "Esprit détective" }, "text": { "es": "Descubres las reglas escondidas.", "en": "You discover hidden rules.", "fr": "Tu découvres les règles cachées." } },
+    "planificacion": { "emoji": "🧭", "color": "#e0f2f1", "name": { "es": "Brújula mágica", "en": "Magic compass", "fr": "Boussole magique" }, "text": { "es": "Encuentras el mejor camino antes de andar.", "en": "You find the best path before you set off.", "fr": "Tu trouves le meilleur chemin avant de partir." } },
+    "fluidez": { "emoji": "💡", "color": "#fff8d6", "name": { "es": "Fábrica de ideas", "en": "Idea factory", "fr": "Usine à idées" }, "text": { "es": "Se te ocurren muchísimas ideas.", "en": "You come up with loads of ideas.", "fr": "Tu as des tas d’idées." } },
+    "flexibilidad": { "emoji": "🤸", "color": "#fde2e4", "name": { "es": "Mente elástica", "en": "Stretchy mind", "fr": "Esprit élastique" }, "text": { "es": "Ves las cosas de muchas maneras distintas.", "en": "You see things in many different ways.", "fr": "Tu vois les choses de plein de façons." } },
+    "originalidad": { "emoji": "🦄", "color": "#efe3fb", "name": { "es": "Imaginación única", "en": "One-of-a-kind imagination", "fr": "Imagination unique" }, "text": { "es": "Tienes ideas que no se le ocurren a nadie más.", "en": "You have ideas nobody else thinks of.", "fr": "Tu as des idées auxquelles personne d’autre ne pense." } },
+    "elaboracion": { "emoji": "🎨", "color": "#ffe5d0", "name": { "es": "Manos de artista", "en": "Artist’s hands", "fr": "Mains d’artiste" }, "text": { "es": "Llenas tus dibujos de detalles y colores.", "en": "You fill your drawings with details and colours.", "fr": "Tu remplis tes dessins de détails et de couleurs." } },
+    "justicia": { "emoji": "⚖️", "color": "#e7eef3", "name": { "es": "Corazón justo", "en": "Fair heart", "fr": "Cœur juste" }, "text": { "es": "Repartes para que todos estén contentos.", "en": "You share so everyone is happy.", "fr": "Tu partages pour que tout le monde soit content." } },
+    "perspectiva": { "emoji": "🤝", "color": "#fde8d7", "name": { "es": "Superempatía", "en": "Super empathy", "fr": "Super-empathie" }, "text": { "es": "Sabes cómo se sienten los demás.", "en": "You know how others feel.", "fr": "Tu sais ce que ressentent les autres." } },
+    "conflicto": { "emoji": "🕊️", "color": "#e6f4fa", "name": { "es": "Guardián de la paz", "en": "Peacekeeper", "fr": "Gardien de la paix" }, "text": { "es": "Encuentras soluciones cuando hay un problema.", "en": "You find solutions when there is a problem.", "fr": "Tu trouves des solutions quand il y a un problème." } },
+    "autorregulacion": { "emoji": "💪", "color": "#fbe3dc", "name": { "es": "Fuerza imparable", "en": "Unstoppable strength", "fr": "Force inarrêtable" }, "text": { "es": "Lo vuelves a intentar y nunca te rindes.", "en": "You try again and never give up.", "fr": "Tu réessaies et tu n’abandonnes jamais." } },
+    "metacognicion": { "emoji": "🪞", "color": "#eef0f7", "name": { "es": "Espejo sabio", "en": "Wise mirror", "fr": "Miroir sage" }, "text": { "es": "Sabes muy bien lo que se te da bien.", "en": "You know very well what you are good at.", "fr": "Tu sais très bien ce que tu fais bien." } }
+  }
+}

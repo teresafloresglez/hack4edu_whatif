@@ -1,0 +1,295 @@
+import { fill, tr, type L } from './index';
+
+// Textos de las pantallas (niño y docente). Los textos propios de cada
+// minijuego están en su archivo; los contenidos (ideas, temas…) en src/data.
+
+const STR = {
+  // ── Comunes ──
+  back: { es: 'Volver', en: 'Back', fr: 'Retour' },
+  listenAgain: { es: 'Escuchar otra vez', en: 'Listen again', fr: 'Écouter encore' },
+  listen: { es: 'Escuchar', en: 'Listen', fr: 'Écouter' },
+  exit: { es: 'Salir', en: 'Exit', fr: 'Sortir' },
+  next: { es: 'Seguir', en: 'Next', fr: 'Suivant' },
+  done: { es: '¡Listo!', en: 'Done!', fr: 'Fini !' },
+  yes: { es: 'Sí', en: 'Yes', fr: 'Oui' },
+  no: { es: 'No', en: 'No', fr: 'Non' },
+  starsAria: { es: '{n} estrellas', en: '{n} stars', fr: '{n} étoiles' },
+  confirmYes: { es: 'Sí, esta', en: 'Yes, this one', fr: 'Oui, celle-ci' },
+  confirmNo: { es: 'No, otra', en: 'No, another one', fr: 'Non, une autre' },
+
+  // ── Inicio ──
+  language: { es: 'Idioma', en: 'Language', fr: 'Langue' },
+  player: { es: 'Jugador', en: 'Player', fr: 'Joueur' },
+  newPlayer: { es: 'Nuevo jugador', en: 'New player', fr: 'Nouveau joueur' },
+  teacherZone: { es: 'Zona docente', en: 'Teacher area', fr: 'Espace enseignant' },
+  homeHintPlayers: { es: '¡Toca tu dibujo para jugar!', en: 'Tap your picture to play!', fr: 'Touche ton dessin pour jouer !' },
+  homeHintEmpty: { es: '¡Toca ➕ para empezar!', en: 'Tap ➕ to start!', fr: 'Touche ➕ pour commencer !' },
+  homeSayPlayers: { es: '¡Hola! Toca tu dibujo para jugar.', en: 'Hello! Tap your picture to play.', fr: 'Bonjour ! Touche ton dessin pour jouer.' },
+  homeSayEmpty: { es: '¡Hola! Toca el más para empezar.', en: 'Hello! Tap the plus to start.', fr: 'Bonjour ! Touche le plus pour commencer.' },
+
+  // ── Alta ──
+  whoAreYou: { es: '¿Quién eres?', en: 'Who are you?', fr: 'Qui es-tu ?' },
+  pickAnimal: { es: 'Elige tu animal.', en: 'Choose your animal.', fr: 'Choisis ton animal.' },
+  animalN: { es: 'Animal {n}', en: 'Animal {n}', fr: 'Animal {n}' },
+  howOld: { es: '¿Cuántos años tienes?', en: 'How old are you?', fr: 'Quel âge as-tu ?' },
+  howOldSay: { es: '¿Cuántos años tienes? Toca tu número.', en: 'How old are you? Tap your number.', fr: 'Quel âge as-tu ? Touche ton nombre.' },
+  ageN: { es: '{n} años', en: '{n} years old', fr: '{n} ans' },
+  tagline: { es: 'Descubrir cómo piensa cada niño, jugando', en: 'Discovering how each child thinks, through play', fr: 'Découvrir comment pense chaque enfant, en jouant' },
+  whereFrom: { es: '¿De dónde eres?', en: 'Where are you from?', fr: "D'où viens-tu ?" },
+  whereFromSay: {
+    es: '¿De qué continente eres? Toca uno para escucharlo y después el botón verde.',
+    en: 'Which continent are you from? Tap one to hear it, then the green button.',
+    fr: "De quel continent viens-tu ? Touches-en un pour l'écouter, puis le bouton vert.",
+  },
+  yourName: { es: 'Tu nombre', en: 'Your name', fr: 'Ton prénom' },
+  namePlaceholder: { es: 'Nombre (lo puede escribir el profe)', en: 'Name (your teacher can type it)', fr: 'Prénom (ton maître peut l’écrire)' },
+  nameAria: { es: 'Nombre', en: 'Name', fr: 'Prénom' },
+  nameSay: {
+    es: 'Si quieres, pide a tu profe que escriba tu nombre. Luego toca el botón verde.',
+    en: 'If you like, ask your teacher to type your name. Then tap the green button.',
+    fr: 'Si tu veux, demande à ton maître d’écrire ton prénom. Puis touche le bouton vert.',
+  },
+
+  // ── Hub ──
+  continueProject: { es: 'Seguir mi proyecto', en: 'Continue my project', fr: 'Continuer mon projet' },
+  startProject: { es: 'Empezar un proyecto', en: 'Start a project', fr: 'Commencer un projet' },
+  newProject: { es: 'Proyecto nuevo', en: 'New project', fr: 'Nouveau projet' },
+  freePlay: { es: 'Jugar libre', en: 'Free play', fr: 'Jeu libre' },
+  freePlaySay: { es: '¿A qué quieres jugar? Toca un juego.', en: 'What do you want to play? Tap a game.', fr: 'À quoi veux-tu jouer ? Touche un jeu.' },
+  newBadge: { es: 'Nuevo', en: 'New', fr: 'Nouveau' },
+  hubSayContinue: {
+    es: '¡Hola otra vez! Toca el botón grande para seguir con tu proyecto.',
+    en: 'Hello again! Tap the big button to continue your project.',
+    fr: 'Re-bonjour ! Touche le grand bouton pour continuer ton projet.',
+  },
+  hubSayStart: {
+    es: '¡Hola! Vamos a empezar un proyecto. Toca el cohete.',
+    en: "Hello! Let's start a project. Tap the rocket.",
+    fr: 'Bonjour ! Commençons un projet. Touche la fusée.',
+  },
+
+  // ── Temas ──
+  whatDoYouLike: { es: '¿Qué te gusta?', en: 'What do you like?', fr: "Qu'est-ce que tu aimes ?" },
+  thisOne: { es: '¡Este!', en: 'This one!', fr: 'Celui-ci !' },
+  themesSay: {
+    es: '¿Qué te gusta más? Toca un dibujo para escucharlo y después el botón verde.',
+    en: 'What do you like best? Tap a picture to hear it, then the green button.',
+    fr: "Qu'est-ce que tu préfères ? Touche un dessin pour l'écouter, puis le bouton vert.",
+  },
+  themesSayClass: {
+    es: 'Hoy toda la clase hace este proyecto. Tócalo para escucharlo.',
+    en: 'Today the whole class is doing this project. Tap it to hear it.',
+    fr: "Aujourd'hui, toute la classe fait ce projet. Touche-le pour l'écouter.",
+  },
+
+  // ── Mapa ──
+  nowPhase: {
+    es: 'Ahora toca: {phase}. Toca el juego que brilla.',
+    en: "Now it's time to: {phase}. Tap the game that is shining.",
+    fr: "Maintenant : {phase}. Touche le jeu qui brille.",
+  },
+
+  // ── Predicción ──
+  predictStars: { es: '¿Cómo crees que te va a salir este juego?', en: 'How do you think this game will go?', fr: 'Comment penses-tu que ce jeu va se passer ?' },
+  predictIdeas: { es: '¿Cuántas ideas crees que se te van a ocurrir?', en: 'How many ideas do you think you will have?', fr: "Combien d'idées penses-tu avoir ?" },
+  predOk: { es: 'Regular', en: 'So-so', fr: 'Moyen' },
+  predGood: { es: 'Bien', en: 'Well', fr: 'Bien' },
+  predGreat: { es: '¡Muy bien!', en: 'Very well!', fr: 'Très bien !' },
+
+  // ── Recompensa ──
+  gameError: { es: 'Algo ha fallado en este juego. ¡Prueba otro!', en: 'Something went wrong in this game. Try another one!', fr: 'Un problème est survenu dans ce jeu. Essaie-en un autre !' },
+  rewardAbandon: { es: '¡Gracias por intentarlo! Puedes volver cuando quieras.', en: 'Thanks for trying! You can come back whenever you like.', fr: "Merci d'avoir essayé ! Tu peux revenir quand tu veux." },
+  rewardImproved: { es: '¡Has superado tu marca! ¡Cada vez lo haces mejor!', en: 'You beat your record! You keep getting better!', fr: 'Tu as battu ton record ! Tu fais de mieux en mieux !' },
+  rewardGood: { es: '¡Muy bien! Te has esforzado mucho.', en: 'Well done! You tried really hard.', fr: 'Très bien ! Tu as fait beaucoup d’efforts.' },
+  rewardFor: { es: 'Para {product}', en: 'For {product}', fr: 'Pour {product}' },
+  rewardItemSay: { es: ' Has conseguido algo nuevo para {product}.', en: ' You got something new for {product}.', fr: ' Tu as gagné quelque chose de nouveau pour {product}.' },
+  projectDone: { es: '¡Proyecto terminado!', en: 'Project finished!', fr: 'Projet terminé !' },
+  projectDoneMsg: { es: '¡Has terminado tu proyecto! ¡Enhorabuena!', en: 'You finished your project! Congratulations!', fr: 'Tu as terminé ton projet ! Bravo !' },
+  projectDoneSay: { es: '¡Enhorabuena{name}! Has terminado tu proyecto.', en: 'Congratulations{name}! You finished your project.', fr: 'Bravo{name} ! Tu as terminé ton projet.' },
+
+  // ── Docente ──
+  tBack: { es: '⬅ Volver', en: '⬅ Back', fr: '⬅ Retour' },
+  pinPrompt: { es: 'Introduzca el PIN docente (por defecto 1234).', en: 'Enter the teacher PIN (default 1234).', fr: 'Saisissez le code enseignant (par défaut 1234).' },
+  pinWrong: { es: 'PIN incorrecto. Inténtelo de nuevo.', en: 'Wrong PIN. Please try again.', fr: 'Code incorrect. Réessayez.' },
+  tabStudents: { es: '👧 Alumnado', en: '👧 Pupils', fr: '👧 Élèves' },
+  tabSettings: { es: '⚙️ Ajustes', en: '⚙️ Settings', fr: '⚙️ Réglages' },
+  tabInfo: { es: '📘 Cómo funciona', en: '📘 How it works', fr: '📘 Fonctionnement' },
+  noData: { es: 'Sin datos', en: 'No data', fr: 'Pas de données' },
+  noDataLower: { es: 'sin datos', en: 'no data', fr: 'pas de données' },
+  noStudents: {
+    es: 'Todavía no hay alumnos. En la pantalla de inicio, los niños pueden crear su perfil tocando ➕.',
+    en: 'There are no pupils yet. On the home screen, children can create their profile by tapping ➕.',
+    fr: "Il n'y a pas encore d'élèves. Sur l'écran d'accueil, les enfants peuvent créer leur profil en touchant ➕.",
+  },
+  colStudent: { es: 'Alumno/a', en: 'Pupil', fr: 'Élève' },
+  colAge: { es: 'Edad', en: 'Age', fr: 'Âge' },
+  colGames: { es: 'Partidas', en: 'Games', fr: 'Parties' },
+  colObserve: { es: 'Observar', en: 'Observe', fr: 'À observer' },
+  noName: { es: '(sin nombre)', en: '(no name)', fr: '(sans nom)' },
+  viewReport: { es: 'Ver informe', en: 'View report', fr: 'Voir le rapport' },
+  classSummary: { es: 'Resumen de la clase', en: 'Class summary', fr: 'Résumé de la classe' },
+  classNote: {
+    es: 'Las barras muestran la media de cada área. El perfil se construye con varias partidas; con pocas partidas los datos son orientativos.',
+    en: 'The bars show the average for each area. The profile is built over several games; with only a few games the data is only a guide.',
+    fr: "Les barres montrent la moyenne de chaque domaine. Le profil se construit sur plusieurs parties ; avec peu de parties, les données sont indicatives.",
+  },
+  report: { es: 'Informe', en: 'Report', fr: 'Rapport' },
+  edit: { es: '✏️ Editar', en: '✏️ Edit', fr: '✏️ Modifier' },
+  print: { es: '🖨️ Imprimir', en: '🖨️ Print', fr: '🖨️ Imprimer' },
+  listenIdea: { es: '▶ Escuchar idea', en: '▶ Listen to idea', fr: "▶ Écouter l'idée" },
+  audioMissing: { es: 'Audio no disponible', en: 'Audio not available', fr: 'Audio indisponible' },
+  noEvidence: { es: 'Aún no hay dibujos ni ideas grabadas.', en: 'No drawings or recorded ideas yet.', fr: "Pas encore de dessins ni d'idées enregistrées." },
+  colDate: { es: 'Fecha', en: 'Date', fr: 'Date' },
+  colGame: { es: 'Juego', en: 'Game', fr: 'Jeu' },
+  colLevel: { es: 'Nivel', en: 'Level', fr: 'Niveau' },
+  colState: { es: 'Estado', en: 'Status', fr: 'État' },
+  abandoned: { es: 'Abandonado', en: 'Left', fr: 'Abandonné' },
+  completed: { es: 'Completado', en: 'Completed', fr: 'Terminé' },
+  levelN: { es: 'nivel {n}', en: 'level {n}', fr: 'niveau {n}' },
+  unnamed: { es: 'Alumno/a sin nombre', en: 'Unnamed pupil', fr: 'Élève sans nom' },
+  reportMeta: { es: '{age} años · {region} · Informe del {date}', en: '{age} years old · {region} · Report of {date}', fr: '{age} ans · {region} · Rapport du {date}' },
+  reportCounts: {
+    es: '{games} partidas · {projects} proyecto(s) terminado(s) · {min} min de juego',
+    en: '{games} games · {projects} project(s) finished · {min} min of play',
+    fr: '{games} parties · {projects} projet(s) terminé(s) · {min} min de jeu',
+  },
+  currentProject: { es: 'Proyecto actual: {theme} — fase {n} ({phase})', en: 'Current project: {theme} — phase {n} ({phase})', fr: 'Projet en cours : {theme} — phase {n} ({phase})' },
+  fewGames: {
+    es: 'ℹ️ Todavía hay pocas partidas. El perfil es orientativo: no se sacan conclusiones de una sola partida.',
+    en: 'ℹ️ There are still only a few games. The profile is a guide: no conclusions are drawn from a single game.',
+    fr: "ℹ️ Il y a encore peu de parties. Le profil est indicatif : aucune conclusion n'est tirée d'une seule partie.",
+  },
+  strengths: { es: '💪 Puntos fuertes', en: '💪 Strengths', fr: '💪 Points forts' },
+  growthAreas: { es: '🌱 Áreas en crecimiento', en: '🌱 Growth areas', fr: '🌱 Points à développer' },
+  notEnough: { es: 'Aún no hay datos suficientes.', en: 'Not enough data yet.', fr: 'Pas encore assez de données.' },
+  noneYet: { es: 'Ninguna destacada por ahora.', en: 'None stands out for now.', fr: "Aucun ne ressort pour l'instant." },
+  profileTitle: { es: '📊 Perfil por dimensiones', en: '📊 Profile by dimension', fr: '📊 Profil par dimension' },
+  profileNote: {
+    es: 'Puntuación interna 0–100 (el niño nunca la ve). Se calcula con todas sus partidas, dando más peso a las recientes y teniendo en cuenta su edad.',
+    en: 'Internal score 0–100 (the child never sees it). It is calculated from all their games, giving more weight to recent ones and taking their age into account.',
+    fr: "Score interne 0–100 (l'enfant ne le voit jamais). Il est calculé sur toutes ses parties, en donnant plus de poids aux plus récentes et en tenant compte de son âge.",
+  },
+  gamesN: { es: '{n} partida(s)', en: '{n} game(s)', fr: '{n} partie(s)' },
+  observeTitle: { es: '👁 Aspectos para observar en el aula', en: '👁 Things to observe in class', fr: '👁 Points à observer en classe' },
+  observeNote: {
+    es: 'Estas observaciones NO son un diagnóstico. Son pistas a contrastar con lo que usted ve en el aula y con la familia.',
+    en: 'These observations are NOT a diagnosis. They are clues to compare with what you see in class and with the family.',
+    fr: 'Ces observations ne sont PAS un diagnostic. Ce sont des pistes à confronter à ce que vous voyez en classe et avec la famille.',
+  },
+  conflictTitle: { es: '🤝 Ante los conflictos', en: '🤝 In conflicts', fr: '🤝 Face aux conflits' },
+  noOrange: { es: 'Aún no ha jugado a La naranja.', en: "Hasn't played The orange yet.", fr: "N'a pas encore joué à L'orange." },
+  conflictNote: { es: 'El objetivo no es que siempre integre, sino que amplíe su repertorio.', en: 'The goal is not for them to always integrate, but to widen their repertoire.', fr: "L'objectif n'est pas qu'il intègre toujours, mais qu'il élargisse son répertoire." },
+  whenCheats: { es: 'Cuando el otro hace trampa: ', en: 'When the other one cheats: ', fr: "Quand l'autre triche : " },
+  workStyle: { es: '🧭 Forma de trabajar', en: '🧭 Way of working', fr: '🧭 Façon de travailler' },
+  recommendations: { es: '🎯 Recomendaciones', en: '🎯 Recommendations', fr: '🎯 Recommandations' },
+  inApp: { es: 'En la app: ', en: 'In the app: ', fr: "Dans l'appli : " },
+  inAppNote: {
+    es: '. La app ya programa más partidas de estos juegos (repetición) dentro de los proyectos que elige.',
+    en: '. The app already schedules more rounds of these games (repetition) within the projects it chooses.',
+    fr: ". L'appli programme déjà plus de parties de ces jeux (répétition) dans les projets qu'elle choisit.",
+  },
+  levelsTitle: { es: '🎮 Niveles actuales', en: '🎮 Current levels', fr: '🎮 Niveaux actuels' },
+  levelsNote: {
+    es: 'Regla: 2 logros seguidos suben un nivel y un fallo baja uno. En los juegos sin respuesta correcta, el logro es mejorar su propia marca.',
+    en: 'Rule: 2 successes in a row go up a level and one failure goes down one. In games with no right answer, success means beating their own record.',
+    fr: "Règle : 2 réussites d'affilée font monter d'un niveau et un échec fait descendre d'un. Dans les jeux sans bonne réponse, la réussite consiste à battre son propre record.",
+  },
+  evidenceTitle: { es: '🖼️ Evidencias (producto final)', en: '🖼️ Evidence (final product)', fr: '🖼️ Traces (produit final)' },
+  recentTitle: { es: '🕒 Últimas partidas', en: '🕒 Latest games', fr: '🕒 Dernières parties' },
+  noGames: { es: 'Sin partidas todavía.', en: 'No games yet.', fr: 'Pas encore de parties.' },
+  editStudent: { es: 'Editar alumno', en: 'Edit pupil', fr: "Modifier l'élève" },
+  save: { es: '💾 Guardar', en: '💾 Save', fr: '💾 Enregistrer' },
+  deleteStudent: { es: 'Borrar alumno', en: 'Delete pupil', fr: "Supprimer l'élève" },
+  deleteConfirm: {
+    es: '¿Borrar a {name} y todos sus datos? No se puede deshacer.',
+    en: 'Delete {name} and all their data? This cannot be undone.',
+    fr: 'Supprimer {name} et toutes ses données ? Cette action est irréversible.',
+  },
+  thisStudent: { es: 'este alumno', en: 'this pupil', fr: 'cet élève' },
+  fName: { es: 'Nombre', en: 'Name', fr: 'Prénom' },
+  fAge: { es: 'Edad', en: 'Age', fr: 'Âge' },
+  fRegion: { es: 'Continente (paquete cultural)', en: 'Continent (cultural pack)', fr: 'Continent (pack culturel)' },
+  sDefaultRegion: { es: 'Continente por defecto para alumnos nuevos', en: 'Default continent for new pupils', fr: 'Continent par défaut des nouveaux élèves' },
+  sLang: { es: 'Idioma de la app (pantallas y voz)', en: 'App language (screens and voice)', fr: "Langue de l'appli (écrans et voix)" },
+  sClass: { es: 'Modo clase: proyecto común para toda la clase', en: 'Class mode: one shared project for the whole class', fr: 'Mode classe : projet commun pour toute la classe' },
+  sClassOff: { es: 'Desactivado (cada niño elige su tema)', en: 'Off (each child chooses their theme)', fr: 'Désactivé (chaque enfant choisit son thème)' },
+  sVoice: { es: ' Voz activada (lee todos los enunciados)', en: ' Voice on (reads all instructions aloud)', fr: ' Voix activée (lit toutes les consignes)' },
+  sRate: { es: 'Velocidad de la voz', en: 'Voice speed', fr: 'Vitesse de la voix' },
+  sSound: { es: ' Sonidos de acierto/fallo', en: ' Right/wrong sounds', fr: ' Sons de réussite/erreur' },
+  sPin: { es: 'PIN docente', en: 'Teacher PIN', fr: 'Code enseignant' },
+  sPinShort: { es: 'El PIN debe tener al menos 4 cifras.', en: 'The PIN must have at least 4 digits.', fr: 'Le code doit comporter au moins 4 chiffres.' },
+  sSaved: { es: '✅ Ajustes guardados.', en: '✅ Settings saved.', fr: '✅ Réglages enregistrés.' },
+  sSave: { es: '💾 Guardar ajustes', en: '💾 Save settings', fr: '💾 Enregistrer les réglages' },
+  sTestVoice: { es: '🔊 Probar voz', en: '🔊 Test voice', fr: '🔊 Tester la voix' },
+  sTestVoiceSay: { es: 'Hola, soy la voz de WHAT IF. ¿Me oyes bien?', en: 'Hello, I am the voice of WHAT IF. Can you hear me well?', fr: 'Bonjour, je suis la voix de WHAT IF. Tu m’entends bien ?' },
+  sExport: { es: '⬇️ Exportar copia de seguridad', en: '⬇️ Export backup', fr: '⬇️ Exporter une sauvegarde' },
+  sImported: { es: '✅ Importados {n} alumnos.', en: '✅ Imported {n} pupils.', fr: '✅ {n} élèves importés.' },
+  sImportFail: { es: '❌ No se pudo importar: ', en: '❌ Could not import: ', fr: "❌ Impossible d'importer : " },
+  sBackups: { es: 'Copias de seguridad', en: 'Backups', fr: 'Sauvegardes' },
+  sBackupsNote: {
+    es: 'Los datos se guardan solo en este dispositivo. Exporte una copia para pasarla a otro dispositivo o guardarla.',
+    en: 'Data is stored only on this device. Export a copy to move it to another device or keep it safe.',
+    fr: 'Les données sont stockées uniquement sur cet appareil. Exportez une copie pour la transférer ou la conserver.',
+  },
+  sImport: { es: 'Importar copia', en: 'Import backup', fr: 'Importer une sauvegarde' },
+  // Cómo funciona
+  iWhat: { es: '¿Qué es WHAT IF?', en: 'What is WHAT IF?', fr: "Qu'est-ce que WHAT IF ?" },
+  iWhatText: {
+    es: 'Una app de minijuegos para niños de 6 a 10 años que descubre cómo piensa cada niño, no cuánto sabe. No hay aprobado ni suspenso: cada respuesta deja una "huella" de su forma de pensar.',
+    en: 'A mini-game app for children aged 6 to 10 that discovers how each child thinks, not how much they know. There is no pass or fail: every answer leaves a "footprint" of their way of thinking.',
+    fr: "Une appli de mini-jeux pour les enfants de 6 à 10 ans qui découvre comment chaque enfant pense, et non ce qu'il sait. Il n'y a ni réussite ni échec : chaque réponse laisse une « empreinte » de sa façon de penser.",
+  },
+  iCycle: { es: 'Ciclo: ', en: 'Cycle: ', fr: 'Cycle : ' },
+  iCycleText: {
+    es: 'Juego → huellas → evaluación → perfil → siguiente juego adaptado.',
+    en: 'Game → footprints → assessment → profile → next adapted game.',
+    fr: 'Jeu → empreintes → évaluation → profil → jeu suivant adapté.',
+  },
+  iProjects: { es: 'Proyectos (ABP)', en: 'Projects (project-based learning)', fr: 'Projets (apprentissage par projet)' },
+  iProjectsText: {
+    es: 'Cada niño elige un tema y vive un proyecto con 5 fases. Avanzar de fase depende de participar, no de acertar.',
+    en: 'Each child chooses a theme and goes through a 5-phase project. Moving on depends on taking part, not on getting things right.',
+    fr: 'Chaque enfant choisit un thème et vit un projet en 5 phases. Passer à la phase suivante dépend de la participation, pas de la réussite.',
+  },
+  iGames: { es: 'Juegos y qué miden', en: 'Games and what they measure', fr: "Les jeux et ce qu'ils mesurent" },
+  iGolden: { es: 'La regla de oro', en: 'The golden rule', fr: "La règle d'or" },
+  iGoldenText: {
+    es: 'La puntuación es interna: el niño solo recibe estrellas por participar, intentarlo y mejorar su propia marca (efecto Pigmalión). Nunca se saca una conclusión de una sola partida.',
+    en: 'The score is internal: the child only gets stars for taking part, trying and beating their own record (Pygmalion effect). No conclusion is ever drawn from a single game.',
+    fr: "Le score est interne : l'enfant ne reçoit des étoiles que pour participer, essayer et battre son propre record (effet Pygmalion). On ne tire jamais de conclusion d'une seule partie.",
+  },
+  iAdapt: { es: 'Adaptación', en: 'Adaptation', fr: 'Adaptation' },
+  iAdapt1: {
+    es: 'Edad: niveles de entrada más bajos a los 6–7 años; a esa edad todo se lee en voz alta y el texto se oculta.',
+    en: 'Age: lower starting levels at 6–7; at that age everything is read aloud and the text is hidden.',
+    fr: 'Âge : niveaux de départ plus bas à 6–7 ans ; à cet âge, tout est lu à voix haute et le texte est masqué.',
+  },
+  iAdapt2: {
+    es: 'Cultura: nombres, frutas y objetos de su región. La originalidad se compara con niños de su misma región.',
+    en: 'Culture: names, fruit and objects from their region. Originality is compared with children from the same region.',
+    fr: 'Culture : prénoms, fruits et objets de sa région. L’originalité est comparée à celle des enfants de la même région.',
+  },
+  iAdapt3: {
+    es: 'Dificultad: 2 logros seguidos suben de nivel, un fallo baja uno.',
+    en: 'Difficulty: 2 successes in a row go up a level, one failure goes down one.',
+    fr: "Difficulté : 2 réussites d'affilée font monter d'un niveau, un échec fait descendre d'un.",
+  },
+  iAdapt4: {
+    es: 'Selección de juegos: se priorizan los juegos que trabajan sus áreas en crecimiento, los que aún no ha probado y, como motivación, los que se le dan bien. Si hay un área débil, se añade una ronda extra (repetición).',
+    en: 'Game choice: priority goes to games that work on their growth areas, those not yet tried and, for motivation, those they are good at. If there is a weak area, an extra round is added (repetition).',
+    fr: "Choix des jeux : priorité aux jeux qui travaillent ses points à développer, à ceux qu'il n'a pas encore essayés et, pour la motivation, à ceux où il réussit. S'il y a un point faible, une manche supplémentaire est ajoutée (répétition).",
+  },
+  iOffline: { es: 'Sin conexión', en: 'Offline', fr: 'Hors connexion' },
+  iOfflineText: {
+    es: 'Tras abrirla una vez, la app funciona sin internet. La voz usa las voces instaladas en el dispositivo.',
+    en: 'After opening it once, the app works without internet. The voice uses the voices installed on the device.',
+    fr: "Après une première ouverture, l'appli fonctionne sans internet. La voix utilise les voix installées sur l'appareil.",
+  },
+} satisfies Record<string, L>;
+
+export type StrKey = keyof typeof STR;
+
+/** Texto de interfaz traducido, con parámetros {x}. */
+export function t(key: StrKey, params?: Record<string, string | number>): string {
+  return fill(tr(STR[key]), params);
+}

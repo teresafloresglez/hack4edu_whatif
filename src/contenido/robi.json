@@ -1,0 +1,1666 @@
+{
+  "_nota": "Razonamientos de Robi. Generados con ayuda de IA generativa FUERA de la app y revisados por personas (criterios: frase corta, un solo fallo del tipo indicado, opción correcta clara, nada falso, seguro para niños). La primera opción es la correcta; el juego las baraja. 'regiones' (opcional) limita el razonamiento a niños de esos continentes.",
+  "razonamientos": [
+    {
+      "id": "an1",
+      "gusto": "animales",
+      "tipo": "absurdo",
+      "escena": "🐄🍫",
+      "frase": {
+        "es": "Las vacas dan leche. Algunas vacas son negras… ¡Así que la leche de chocolate la dan las vacas negras!",
+        "en": "Cows give milk. Some cows are black… So chocolate milk comes from black cows!",
+        "fr": "Les vaches donnent du lait. Certaines vaches sont noires… Alors le lait au chocolat vient des vaches noires !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "El color de la vaca no cambia la leche",
+            "en": "The colour of the cow does not change the milk",
+            "fr": "La couleur de la vache ne change pas le lait"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las vacas no dan leche",
+            "en": "Cows do not give milk",
+            "fr": "Les vaches ne donnent pas de lait"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Toda la leche es de chocolate",
+            "en": "All milk is chocolate milk",
+            "fr": "Tout le lait est au chocolat"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Claro! Todas las vacas dan leche blanca; el chocolate se lo ponemos nosotros.",
+        "en": "Of course! All cows give white milk; we add the chocolate.",
+        "fr": "Bien sûr ! Toutes les vaches donnent du lait blanc ; c’est nous qui ajoutons le chocolat."
+      }
+    },
+    {
+      "id": "an2",
+      "gusto": "animales",
+      "tipo": "alReves",
+      "escena": "🐟🛁",
+      "frase": {
+        "es": "Los peces viven en el agua. Mi bañera tiene agua… ¡Así que mi bañera está llena de peces!",
+        "en": "Fish live in water. My bath has water… So my bath is full of fish!",
+        "fr": "Les poissons vivent dans l’eau. Ma baignoire a de l’eau… Alors ma baignoire est pleine de poissons !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Que haya agua no hace que aparezcan peces",
+            "en": "Water does not make fish appear",
+            "fr": "L’eau ne fait pas apparaître des poissons"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los peces viven en los árboles",
+            "en": "Fish live in trees",
+            "fr": "Les poissons vivent dans les arbres"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Las bañeras no tienen agua",
+            "en": "Baths have no water",
+            "fr": "Les baignoires n’ont pas d’eau"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ahora lo sé! Que haya agua no significa que haya peces.",
+        "en": "Now I know! Having water does not mean there are fish.",
+        "fr": "Maintenant, je sais ! Avoir de l’eau ne veut pas dire qu’il y a des poissons."
+      }
+    },
+    {
+      "id": "an3",
+      "gusto": "animales",
+      "tipo": "parecido",
+      "escena": "🦓🚸",
+      "frase": {
+        "es": "Las cebras tienen rayas. El paso de cebra tiene rayas… ¡El paso de cebra es una cebra!",
+        "en": "Zebras have stripes. The zebra crossing has stripes… The zebra crossing is a zebra!",
+        "fr": "Les zèbres ont des rayures. Le passage piéton a des rayures… Le passage piéton est un zèbre !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Tener rayas no te convierte en cebra",
+            "en": "Having stripes does not make you a zebra",
+            "fr": "Avoir des rayures ne fait pas de toi un zèbre"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las cebras no tienen rayas",
+            "en": "Zebras have no stripes",
+            "fr": "Les zèbres n’ont pas de rayures"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "El paso de cebra corre muy rápido",
+            "en": "The zebra crossing runs very fast",
+            "fr": "Le passage piéton court très vite"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Vale! Se parecen en las rayas, pero no son lo mismo.",
+        "en": "Okay! They both have stripes, but they are not the same thing.",
+        "fr": "D’accord ! Ils ont tous les deux des rayures, mais ce n’est pas pareil."
+      }
+    },
+    {
+      "id": "an4",
+      "gusto": "animales",
+      "tipo": "parecido",
+      "escena": "🐯🐱",
+      "frase": {
+        "es": "Mi gato tiene bigotes y rayas, como un tigre… ¡Mi gato es un tigre!",
+        "en": "My cat has whiskers and stripes, like a tiger… My cat is a tiger!",
+        "fr": "Mon chat a des moustaches et des rayures, comme un tigre… Mon chat est un tigre !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Tener bigotes y rayas no te convierte en tigre",
+            "en": "Having whiskers and stripes does not make you a tiger",
+            "fr": "Avoir des moustaches et des rayures ne fait pas de toi un tigre"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los gatos no tienen bigotes",
+            "en": "Cats have no whiskers",
+            "fr": "Les chats n’ont pas de moustaches"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Los tigres son gatos pequeñitos",
+            "en": "Tigers are tiny cats",
+            "fr": "Les tigres sont de tout petits chats"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Vale! Se parecen en los bigotes y las rayas, pero mi gato no es un tigre.",
+        "en": "Okay! They both have whiskers and stripes, but my cat is not a tiger.",
+        "fr": "D’accord ! Ils ont des moustaches et des rayures, mais mon chat n’est pas un tigre."
+      }
+    },
+    {
+      "id": "an5",
+      "gusto": "animales",
+      "tipo": "falsaCausa",
+      "escena": "🐓🌅",
+      "frase": {
+        "es": "Cuando el gallo canta, sale el sol. ¡El gallo hace salir el sol!",
+        "en": "When the rooster crows, the sun comes up. The rooster makes the sun come up!",
+        "fr": "Quand le coq chante, le soleil se lève. C’est le coq qui fait lever le soleil !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "El sol sale aunque el gallo no cante",
+            "en": "The sun comes up even if the rooster does not crow",
+            "fr": "Le soleil se lève même si le coq ne chante pas"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los gallos no saben cantar",
+            "en": "Roosters cannot crow",
+            "fr": "Les coqs ne savent pas chanter"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "El sol hace cantar a las vacas",
+            "en": "The sun makes cows sing",
+            "fr": "Le soleil fait chanter les vaches"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ya lo entiendo! Pasan a la vez, pero el gallo no mueve el sol.",
+        "en": "I get it! They happen at the same time, but the rooster does not move the sun.",
+        "fr": "J’ai compris ! Ça arrive en même temps, mais le coq ne fait pas bouger le soleil."
+      }
+    },
+    {
+      "id": "an6",
+      "gusto": "animales",
+      "tipo": "falsaCausa",
+      "escena": "🐕🌧️",
+      "frase": {
+        "es": "Saqué a pasear al perro y empezó a llover. ¡Pasear al perro trae la lluvia!",
+        "en": "I took the dog for a walk and it started to rain. Walking the dog brings rain!",
+        "fr": "J’ai promené le chien et il a commencé à pleuvoir. Promener le chien fait venir la pluie !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Llovió por las nubes, no por el paseo",
+            "en": "It rained because of the clouds, not the walk",
+            "fr": "Il a plu à cause des nuages, pas de la promenade"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los perros no salen a pasear",
+            "en": "Dogs never go for walks",
+            "fr": "Les chiens ne vont jamais se promener"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "La lluvia trae perros",
+            "en": "Rain brings dogs",
+            "fr": "La pluie fait venir les chiens"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Claro! La lluvia viene de las nubes, no del paseo.",
+        "en": "Of course! Rain comes from the clouds, not from the walk.",
+        "fr": "Bien sûr ! La pluie vient des nuages, pas de la promenade."
+      }
+    },
+    {
+      "id": "an7",
+      "gusto": "animales",
+      "tipo": "generalizar",
+      "escena": "🐝🦋",
+      "frase": {
+        "es": "Una abeja me picó. ¡Todos los insectos pican!",
+        "en": "A bee stung me. All insects sting!",
+        "fr": "Une abeille m’a piqué. Tous les insectes piquent !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Muchos insectos no pican, como las mariposas",
+            "en": "Many insects do not sting, like butterflies",
+            "fr": "Beaucoup d’insectes ne piquent pas, comme les papillons"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las abejas nunca pican",
+            "en": "Bees never sting",
+            "fr": "Les abeilles ne piquent jamais"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Solo pican los insectos azules",
+            "en": "Only blue insects sting",
+            "fr": "Seuls les insectes bleus piquent"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Entendido! Que me pase una vez no quiere decir que pase siempre.",
+        "en": "Got it! Something happening once does not mean it always happens.",
+        "fr": "Compris ! Si ça arrive une fois, ça n’arrive pas forcément toujours."
+      }
+    },
+    {
+      "id": "an8",
+      "gusto": "animales",
+      "tipo": "generalizar",
+      "escena": "🐧🐦",
+      "frase": {
+        "es": "Vi un pájaro que no sabía volar: un pingüino. ¡Ningún pájaro sabe volar!",
+        "en": "I saw a bird that could not fly: a penguin. No bird can fly!",
+        "fr": "J’ai vu un oiseau qui ne savait pas voler : un manchot. Aucun oiseau ne sait voler !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "El pingüino no vuela, pero la mayoría de pájaros sí",
+            "en": "Penguins do not fly, but most birds do",
+            "fr": "Le manchot ne vole pas, mais la plupart des oiseaux volent"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los pingüinos vuelan muy alto",
+            "en": "Penguins fly very high",
+            "fr": "Les manchots volent très haut"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Los pájaros no tienen alas",
+            "en": "Birds have no wings",
+            "fr": "Les oiseaux n’ont pas d’ailes"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ahora lo sé! Un pájaro no me dice cómo son todos.",
+        "en": "Now I know! One bird does not tell me what all birds are like.",
+        "fr": "Maintenant, je sais ! Un seul oiseau ne me dit pas comment sont tous les oiseaux."
+      }
+    },
+    {
+      "id": "an9",
+      "gusto": "animales",
+      "tipo": "alReves",
+      "escena": "🐟🏊",
+      "frase": {
+        "es": "Todos los peces nadan. Yo nado… ¡Así que soy un pez!",
+        "en": "All fish swim. I swim… So I am a fish!",
+        "fr": "Tous les poissons nagent. Je nage… Alors je suis un poisson !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Los peces nadan, pero también nadan otros, como las personas",
+            "en": "Fish swim, but others swim too, like people",
+            "fr": "Les poissons nagent, mais d’autres nagent aussi, comme les personnes"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las personas no saben nadar",
+            "en": "People cannot swim",
+            "fr": "Les personnes ne savent pas nager"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Los peces no nadan",
+            "en": "Fish do not swim",
+            "fr": "Les poissons ne nagent pas"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ah! Que todos los peces naden no quiere decir que todo el que nada sea un pez.",
+        "en": "Ah! All fish swim, but not everyone who swims is a fish.",
+        "fr": "Ah ! Tous les poissons nagent, mais tous ceux qui nagent ne sont pas des poissons."
+      }
+    },
+    {
+      "id": "an10",
+      "gusto": "animales",
+      "tipo": "alReves",
+      "escena": "🐦🛏️",
+      "frase": {
+        "es": "Todos los pájaros tienen plumas. Mi almohada tiene plumas… ¡Mi almohada es un pájaro!",
+        "en": "All birds have feathers. My pillow has feathers… My pillow is a bird!",
+        "fr": "Tous les oiseaux ont des plumes. Mon oreiller a des plumes… Mon oreiller est un oiseau !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Los pájaros tienen plumas, pero no todo lo que tiene plumas es un pájaro",
+            "en": "Birds have feathers, but not everything with feathers is a bird",
+            "fr": "Les oiseaux ont des plumes, mais ce qui a des plumes n’est pas forcément un oiseau"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los pájaros no tienen plumas",
+            "en": "Birds have no feathers",
+            "fr": "Les oiseaux n’ont pas de plumes"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Las almohadas vuelan por la noche",
+            "en": "Pillows fly at night",
+            "fr": "Les oreillers volent la nuit"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Entendido! La regla funciona en un sentido, no al revés.",
+        "en": "Got it! The rule works one way, not the other way round.",
+        "fr": "Compris ! La règle marche dans un sens, pas à l’envers."
+      }
+    },
+    {
+      "id": "an11",
+      "gusto": "animales",
+      "tipo": "ninguno",
+      "escena": "🐦🪶",
+      "frase": {
+        "es": "Los pájaros tienen alas. El gorrión es un pájaro… ¡Así que el gorrión tiene alas!",
+        "en": "Birds have wings. A sparrow is a bird… So the sparrow has wings!",
+        "fr": "Les oiseaux ont des ailes. Le moineau est un oiseau… Alors le moineau a des ailes !"
+      },
+      "aprende": {
+        "es": "¡Bien! Esta vez he pensado bien.",
+        "en": "Great! This time I thought it through.",
+        "fr": "Super ! Cette fois, j’ai bien réfléchi."
+      }
+    },
+    {
+      "id": "an12",
+      "gusto": "animales",
+      "tipo": "ninguno",
+      "escena": "🐠💧",
+      "frase": {
+        "es": "Los peces necesitan agua para vivir. Por eso mi pez vive en un acuario lleno de agua.",
+        "en": "Fish need water to live. That is why my fish lives in a tank full of water.",
+        "fr": "Les poissons ont besoin d’eau pour vivre. C’est pour ça que mon poisson vit dans un aquarium plein d’eau."
+      },
+      "aprende": {
+        "es": "¡Eso es! Tenía sentido.",
+        "en": "That’s it! It made sense.",
+        "fr": "C’est ça ! Ça avait du sens."
+      }
+    },
+    {
+      "id": "an13",
+      "gusto": "animales",
+      "tipo": "ninguno",
+      "escena": "🐻‍❄️❄️",
+      "frase": {
+        "es": "Los osos polares viven donde hace mucho frío. Por eso tienen un pelaje muy espeso que les da calor.",
+        "en": "Polar bears live where it is very cold. That is why they have thick fur that keeps them warm.",
+        "fr": "Les ours polaires vivent là où il fait très froid. C’est pour ça qu’ils ont une fourrure épaisse qui les tient au chaud."
+      },
+      "aprende": {
+        "es": "¡Bien! El pelaje espeso los protege del frío.",
+        "en": "Great! Thick fur protects them from the cold.",
+        "fr": "Super ! La fourrure épaisse les protège du froid."
+      }
+    },
+    {
+      "id": "an14",
+      "gusto": "animales",
+      "tipo": "absurdo",
+      "escena": "🐄🌿",
+      "frase": {
+        "es": "Las vacas comen hierba verde. ¡Por eso la leche es verde!",
+        "en": "Cows eat green grass. That is why milk is green!",
+        "fr": "Les vaches mangent de l’herbe verte. C’est pour ça que le lait est vert !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "La leche es blanca aunque la vaca coma hierba verde",
+            "en": "Milk is white even though cows eat green grass",
+            "fr": "Le lait est blanc même si la vache mange de l’herbe verte"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las vacas comen piedras",
+            "en": "Cows eat stones",
+            "fr": "Les vaches mangent des cailloux"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "La hierba es azul",
+            "en": "Grass is blue",
+            "fr": "L’herbe est bleue"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Claro! Lo que come la vaca no pinta la leche de su color.",
+        "en": "Of course! What the cow eats does not colour the milk.",
+        "fr": "Bien sûr ! Ce que mange la vache ne colore pas le lait."
+      }
+    },
+    {
+      "id": "an15",
+      "gusto": "animales",
+      "tipo": "absurdo",
+      "escena": "🦒🧒",
+      "frase": {
+        "es": "Las jirafas tienen el cuello muy largo. ¡Si estiro mucho el cuello, me convertiré en jirafa!",
+        "en": "Giraffes have very long necks. If I stretch my neck a lot, I will turn into a giraffe!",
+        "fr": "Les girafes ont un très long cou. Si j’étire beaucoup mon cou, je vais devenir une girafe !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Estirarse no convierte a nadie en jirafa",
+            "en": "Stretching does not turn anyone into a giraffe",
+            "fr": "S’étirer ne transforme personne en girafe"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las jirafas tienen el cuello corto",
+            "en": "Giraffes have short necks",
+            "fr": "Les girafes ont un cou court"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Las jirafas son personas",
+            "en": "Giraffes are people",
+            "fr": "Les girafes sont des personnes"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Vale! Cada animal es como es, aunque nos estiremos.",
+        "en": "Okay! Each animal is what it is, however much we stretch.",
+        "fr": "D’accord ! Chaque animal est comme il est, même si on s’étire."
+      }
+    },
+    {
+      "id": "de1",
+      "gusto": "deporte",
+      "tipo": "absurdo",
+      "escena": "🏃🌙",
+      "frase": {
+        "es": "Si corro muy, muy rápido… ¡Puedo llegar corriendo hasta la luna!",
+        "en": "If I run really, really fast… I can run all the way to the moon!",
+        "fr": "Si je cours très, très vite… je peux aller jusqu’à la lune en courant !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Correr no te lleva hasta la luna",
+            "en": "Running cannot take you to the moon",
+            "fr": "Courir ne t’emmène pas jusqu’à la lune"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "La luna está al lado de casa",
+            "en": "The moon is next to my house",
+            "fr": "La lune est à côté de la maison"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Para ir a la luna hay que nadar",
+            "en": "You have to swim to get to the moon",
+            "fr": "Pour aller sur la lune, il faut nager"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Claro! La luna está lejísimos y no se puede llegar corriendo.",
+        "en": "Of course! The moon is very far away and you cannot run there.",
+        "fr": "Bien sûr ! La lune est très loin et on ne peut pas y aller en courant."
+      }
+    },
+    {
+      "id": "de2",
+      "gusto": "deporte",
+      "tipo": "absurdo",
+      "escena": "🏀☁️",
+      "frase": {
+        "es": "Si boto el balón muy fuerte, ¡llegará hasta las nubes!",
+        "en": "If I bounce the ball really hard, it will reach the clouds!",
+        "fr": "Si je fais rebondir le ballon très fort, il ira jusqu’aux nuages !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Un balón no puede botar tan alto",
+            "en": "A ball cannot bounce that high",
+            "fr": "Un ballon ne peut pas rebondir si haut"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los balones no botan",
+            "en": "Balls do not bounce",
+            "fr": "Les ballons ne rebondissent pas"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Las nubes están en el suelo",
+            "en": "Clouds are on the ground",
+            "fr": "Les nuages sont par terre"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ahora lo sé! El balón bota, pero no tanto.",
+        "en": "Now I know! The ball bounces, but not that much.",
+        "fr": "Maintenant, je sais ! Le ballon rebondit, mais pas autant."
+      }
+    },
+    {
+      "id": "de3",
+      "gusto": "deporte",
+      "tipo": "parecido",
+      "escena": "🍊🏀",
+      "frase": {
+        "es": "Las naranjas son redondas y naranjas. ¡El balón de baloncesto es una naranja gigante!",
+        "en": "Oranges are round and orange. A basketball is a giant orange!",
+        "fr": "Les oranges sont rondes et orange. Le ballon de basket est une orange géante !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Ser redondo y naranja no lo convierte en una fruta",
+            "en": "Being round and orange does not make it a fruit",
+            "fr": "Être rond et orange n’en fait pas un fruit"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "El balón se puede comer",
+            "en": "You can eat the ball",
+            "fr": "On peut manger le ballon"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Las naranjas son cuadradas",
+            "en": "Oranges are square",
+            "fr": "Les oranges sont carrées"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Vale! Se parecen, pero el balón no es una fruta.",
+        "en": "Okay! They look alike, but the ball is not a fruit.",
+        "fr": "D’accord ! Ils se ressemblent, mais le ballon n’est pas un fruit."
+      }
+    },
+    {
+      "id": "de4",
+      "gusto": "deporte",
+      "tipo": "parecido",
+      "escena": "🥅🕸️",
+      "frase": {
+        "es": "La portería tiene una red. Las arañas hacen redes… ¡La portería es de una araña!",
+        "en": "The goal has a net. Spider webs look like nets… The goal belongs to a spider!",
+        "fr": "Le but a un filet. Les toiles d’araignée ressemblent à des filets… Le but appartient à une araignée !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Las dos tienen red, pero no son lo mismo",
+            "en": "Both look like a net, but they are not the same",
+            "fr": "Les deux ressemblent à un filet, mais ce n’est pas pareil"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las arañas juegan al fútbol",
+            "en": "Spiders play football",
+            "fr": "Les araignées jouent au football"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "La portería no tiene red",
+            "en": "The goal has no net",
+            "fr": "Le but n’a pas de filet"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ya veo! Parecerse en algo no es ser lo mismo.",
+        "en": "I see! Being alike in one thing is not being the same.",
+        "fr": "Je vois ! Se ressembler un peu, ce n’est pas être pareil."
+      }
+    },
+    {
+      "id": "de5",
+      "gusto": "deporte",
+      "tipo": "falsaCausa",
+      "escena": "👕🏆",
+      "frase": {
+        "es": "Ayer me puse mi camiseta roja y mi equipo ganó. ¡Mi camiseta roja hace ganar al equipo!",
+        "en": "Yesterday I wore my red shirt and my team won. My red shirt makes the team win!",
+        "fr": "Hier, j’ai mis mon tee-shirt rouge et mon équipe a gagné. Mon tee-shirt rouge fait gagner l’équipe !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "La camiseta no hace que el equipo gane",
+            "en": "The shirt does not make the team win",
+            "fr": "Le tee-shirt ne fait pas gagner l’équipe"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "La camiseta tenía que ser azul",
+            "en": "The shirt should have been blue",
+            "fr": "Le tee-shirt devait être bleu"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "El equipo nunca gana",
+            "en": "The team never wins",
+            "fr": "L’équipe ne gagne jamais"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Entendido! Pasó a la vez, pero no fue por la camiseta.",
+        "en": "Got it! It happened at the same time, but not because of the shirt.",
+        "fr": "Compris ! C’est arrivé en même temps, mais ce n’était pas grâce au tee-shirt."
+      }
+    },
+    {
+      "id": "de6",
+      "gusto": "deporte",
+      "tipo": "falsaCausa",
+      "escena": "🍌🏅",
+      "frase": {
+        "es": "Me comí un plátano y luego gané la carrera. ¡Los plátanos hacen ganar carreras!",
+        "en": "I ate a banana and then I won the race. Bananas make you win races!",
+        "fr": "J’ai mangé une banane et ensuite j’ai gagné la course. Les bananes font gagner les courses !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Comer plátano no hace ganar carreras",
+            "en": "Eating a banana does not make you win races",
+            "fr": "Manger une banane ne fait pas gagner les courses"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los plátanos corren mucho",
+            "en": "Bananas run very fast",
+            "fr": "Les bananes courent très vite"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Nadie gana las carreras",
+            "en": "Nobody wins races",
+            "fr": "Personne ne gagne les courses"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Claro! Lo importante fue correr rápido.",
+        "en": "Of course! What mattered was running fast.",
+        "fr": "Bien sûr ! Ce qui compte, c’est d’avoir couru vite."
+      }
+    },
+    {
+      "id": "de7",
+      "gusto": "deporte",
+      "tipo": "generalizar",
+      "escena": "🎾😢",
+      "frase": {
+        "es": "Perdí un partido de tenis. ¡Nunca voy a ganar ningún partido!",
+        "en": "I lost a tennis match. I will never win any match!",
+        "fr": "J’ai perdu un match de tennis. Je ne gagnerai jamais aucun match !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Perder una vez no significa perder siempre",
+            "en": "Losing once does not mean losing every time",
+            "fr": "Perdre une fois ne veut pas dire perdre toujours"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Al tenis no se puede ganar",
+            "en": "You can’t win at tennis",
+            "fr": "On ne peut pas gagner au tennis"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Solo ganan los robots",
+            "en": "Only robots win",
+            "fr": "Seuls les robots gagnent"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ahora lo sé! Si practico, la próxima vez puedo ganar.",
+        "en": "Now I know! If I practise, I can win next time.",
+        "fr": "Maintenant, je sais ! Si je m’entraîne, je peux gagner la prochaine fois."
+      }
+    },
+    {
+      "id": "de8",
+      "gusto": "deporte",
+      "tipo": "generalizar",
+      "escena": "🏀🧍",
+      "frase": {
+        "es": "Mi primo es muy alto y juega muy bien al baloncesto. ¡Todos los altos juegan bien al baloncesto!",
+        "en": "My cousin is very tall and plays basketball very well. All tall people play basketball well!",
+        "fr": "Mon cousin est très grand et joue très bien au basket. Tous les grands jouent bien au basket !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Ser alto ayuda, pero no todos los altos juegan bien",
+            "en": "Being tall helps, but not all tall people play well",
+            "fr": "Être grand aide, mais tous les grands ne jouent pas bien"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los altos no saben jugar",
+            "en": "Tall people can’t play",
+            "fr": "Les grands ne savent pas jouer"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Mi primo es bajito",
+            "en": "My cousin is short",
+            "fr": "Mon cousin est petit"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ya lo veo! Con una persona no puedo saber cómo son todas.",
+        "en": "I see! From one person I can’t know what everyone is like.",
+        "fr": "Je vois ! Avec une seule personne, je ne peux pas savoir comment sont les autres."
+      }
+    },
+    {
+      "id": "de9",
+      "gusto": "deporte",
+      "tipo": "alReves",
+      "escena": "⚽👟",
+      "frase": {
+        "es": "Todos los futbolistas tienen botas. Yo tengo botas… ¡Así que soy futbolista profesional!",
+        "en": "All footballers have boots. I have boots… So I am a professional footballer!",
+        "fr": "Tous les footballeurs ont des crampons. J’ai des crampons… Alors je suis footballeur professionnel !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Tener botas no te convierte en futbolista profesional",
+            "en": "Having boots does not make you a professional footballer",
+            "fr": "Avoir des crampons ne fait pas de toi un footballeur professionnel"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los futbolistas juegan descalzos",
+            "en": "Footballers play barefoot",
+            "fr": "Les footballeurs jouent pieds nus"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Las botas solo son para la lluvia",
+            "en": "Boots are only for the rain",
+            "fr": "Les crampons, c’est seulement pour la pluie"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Entendido! La regla no funciona al revés.",
+        "en": "Got it! The rule does not work the other way round.",
+        "fr": "Compris ! La règle ne marche pas à l’envers."
+      }
+    },
+    {
+      "id": "de10",
+      "gusto": "deporte",
+      "tipo": "alReves",
+      "escena": "🏊🌧️",
+      "frase": {
+        "es": "Los nadadores se mojan. Hoy me he mojado con la lluvia… ¡Así que soy nadador!",
+        "en": "Swimmers get wet. Today I got wet in the rain… So I am a swimmer!",
+        "fr": "Les nageurs se mouillent. Aujourd’hui, je me suis mouillé sous la pluie… Alors je suis nageur !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Al nadar te mojas, pero mojarte no es nadar",
+            "en": "You get wet when you swim, but getting wet is not swimming",
+            "fr": "En nageant on se mouille, mais se mouiller, ce n’est pas nager"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los nadadores no se mojan",
+            "en": "Swimmers don’t get wet",
+            "fr": "Les nageurs ne se mouillent pas"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "La lluvia es una piscina",
+            "en": "Rain is a swimming pool",
+            "fr": "La pluie est une piscine"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ah, claro! Mojarse no es lo mismo que nadar.",
+        "en": "Ah, of course! Getting wet is not the same as swimming.",
+        "fr": "Ah, bien sûr ! Se mouiller, ce n’est pas nager."
+      }
+    },
+    {
+      "id": "de11",
+      "gusto": "deporte",
+      "tipo": "ninguno",
+      "escena": "⚽🥅",
+      "frase": {
+        "es": "Los partidos de fútbol se juegan con un balón. Hoy jugamos un partido… ¡Necesitamos un balón!",
+        "en": "Football matches are played with a ball. We are playing a match today… We need a ball!",
+        "fr": "Les matchs de foot se jouent avec un ballon. Aujourd’hui, on joue un match… Il nous faut un ballon !"
+      },
+      "aprende": {
+        "es": "¡Claro! Esta vez he pensado bien.",
+        "en": "Of course! This time I thought it through.",
+        "fr": "Bien sûr ! Cette fois, j’ai bien réfléchi."
+      }
+    },
+    {
+      "id": "de12",
+      "gusto": "deporte",
+      "tipo": "ninguno",
+      "escena": "🏃📅",
+      "frase": {
+        "es": "Si entreno un poquito todos los días, poco a poco correré mejor.",
+        "en": "If I train a little every day, little by little I will run better.",
+        "fr": "Si je m’entraîne un peu tous les jours, petit à petit, je courrai mieux."
+      },
+      "aprende": {
+        "es": "¡Eso es! Practicar ayuda a mejorar.",
+        "en": "That’s it! Practice helps you improve.",
+        "fr": "C’est ça ! S’entraîner aide à progresser."
+      }
+    },
+    {
+      "id": "de13",
+      "gusto": "deporte",
+      "tipo": "ninguno",
+      "escena": "🚲⚖️",
+      "frase": {
+        "es": "Para ir en bici hay que mantener el equilibrio. Por eso, al principio, usamos rueditas de apoyo.",
+        "en": "To ride a bike you need balance. That is why we use stabilisers at first.",
+        "fr": "Pour faire du vélo, il faut garder l’équilibre. C’est pour ça qu’au début on met des petites roues."
+      },
+      "aprende": {
+        "es": "¡Bien! Las rueditas de apoyo ayudan con el equilibrio.",
+        "en": "Great! Stabilisers help with balance.",
+        "fr": "Super ! Les petites roues aident à garder l’équilibre."
+      }
+    },
+    {
+      "id": "co1",
+      "gusto": "comida",
+      "tipo": "absurdo",
+      "escena": "🍉🫃",
+      "frase": {
+        "es": "Si me como una semilla de sandía… ¡Me crecerá una sandía en la tripa!",
+        "en": "If I eat a watermelon seed… A watermelon will grow in my tummy!",
+        "fr": "Si je mange un pépin de pastèque… une pastèque va pousser dans mon ventre !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Una semilla no puede crecer dentro de la tripa",
+            "en": "A seed cannot grow inside your tummy",
+            "fr": "Une graine ne peut pas pousser dans le ventre"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las sandías crecen en las tripas",
+            "en": "Watermelons grow in tummies",
+            "fr": "Les pastèques poussent dans les ventres"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Las sandías no tienen semillas",
+            "en": "Watermelons have no seeds",
+            "fr": "Les pastèques n’ont pas de pépins"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Menos mal! Las semillas se plantan en la tierra; en la tripa no pueden crecer.",
+        "en": "Phew! Seeds are planted in the soil; they cannot grow in your tummy.",
+        "fr": "Ouf ! On plante les graines dans la terre ; dans le ventre, elles ne peuvent pas pousser."
+      }
+    },
+    {
+      "id": "co2",
+      "gusto": "comida",
+      "tipo": "absurdo",
+      "escena": "🍦❄️",
+      "frase": {
+        "es": "El helado está muy frío. ¡Si como mucho helado en verano, empezará a nevar!",
+        "en": "Ice cream is very cold. If I eat lots of ice cream in summer, it will start to snow!",
+        "fr": "La glace est très froide. Si je mange beaucoup de glace en été, il va neiger !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Comer helado no cambia el tiempo",
+            "en": "Eating ice cream does not change the weather",
+            "fr": "Manger de la glace ne change pas le temps"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "En verano siempre nieva",
+            "en": "It always snows in summer",
+            "fr": "En été, il neige toujours"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "El helado está caliente",
+            "en": "Ice cream is hot",
+            "fr": "La glace est chaude"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Claro! El tiempo no depende de lo que como.",
+        "en": "Of course! The weather does not depend on what I eat.",
+        "fr": "Bien sûr ! Le temps ne dépend pas de ce que je mange."
+      }
+    },
+    {
+      "id": "co3",
+      "gusto": "comida",
+      "tipo": "parecido",
+      "escena": "🍓🍅",
+      "frase": {
+        "es": "Las fresas son rojas. Los tomates son rojos… ¡Los tomates son fresas!",
+        "en": "Strawberries are red. Tomatoes are red… Tomatoes are strawberries!",
+        "fr": "Les fraises sont rouges. Les tomates sont rouges… Les tomates sont des fraises !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Ser rojos no los hace iguales",
+            "en": "Being red does not make them the same",
+            "fr": "Être rouges ne les rend pas pareilles"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las fresas son azules",
+            "en": "Strawberries are blue",
+            "fr": "Les fraises sont bleues"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Los tomates son dulces como caramelos",
+            "en": "Tomatoes are as sweet as sweets",
+            "fr": "Les tomates sont sucrées comme des bonbons"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Vale! Tienen el mismo color, pero son distintos.",
+        "en": "Okay! They are the same colour, but they are different.",
+        "fr": "D’accord ! Elles ont la même couleur, mais elles sont différentes."
+      }
+    },
+    {
+      "id": "co4",
+      "gusto": "comida",
+      "tipo": "parecido",
+      "escena": "🌕🧀",
+      "frase": {
+        "es": "La luna es redonda y amarilla, como el queso. ¡La luna está hecha de queso!",
+        "en": "The moon is round and yellow, like cheese. The moon is made of cheese!",
+        "fr": "La lune est ronde et jaune, comme le fromage. La lune est faite de fromage !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Parecerse al queso no la hace de queso",
+            "en": "Looking like cheese does not make it cheese",
+            "fr": "Ressembler à du fromage ne la rend pas faite de fromage"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "El queso es cuadrado",
+            "en": "Cheese is square",
+            "fr": "Le fromage est carré"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "La luna se puede comer",
+            "en": "You can eat the moon",
+            "fr": "On peut manger la lune"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ya veo! Se parece al queso, pero es de roca.",
+        "en": "I see! It looks like cheese, but it is made of rock.",
+        "fr": "Je vois ! Elle ressemble au fromage, mais elle est faite de roche."
+      }
+    },
+    {
+      "id": "co5",
+      "gusto": "comida",
+      "tipo": "falsaCausa",
+      "escena": "🥕🔭",
+      "frase": {
+        "es": "Comí zanahoria y luego vi un pájaro muy lejos. ¡La zanahoria me ha dado superojos!",
+        "en": "I ate a carrot and then I saw a bird far away. The carrot gave me super eyes!",
+        "fr": "J’ai mangé une carotte et ensuite j’ai vu un oiseau très loin. La carotte m’a donné des super yeux !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "La zanahoria no da superojos",
+            "en": "Carrots do not give you super eyes",
+            "fr": "Les carottes ne donnent pas des super-yeux"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las zanahorias son gafas",
+            "en": "Carrots are glasses",
+            "fr": "Les carottes sont des lunettes"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Los pájaros comen zanahorias",
+            "en": "Birds eat carrots",
+            "fr": "Les oiseaux mangent des carottes"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Entendido! Pasó después, pero no por la zanahoria.",
+        "en": "Got it! It happened afterwards, but not because of the carrot.",
+        "fr": "Compris ! C’est arrivé après, mais pas à cause de la carotte."
+      }
+    },
+    {
+      "id": "co6",
+      "gusto": "comida",
+      "tipo": "falsaCausa",
+      "escena": "🎂🌧️",
+      "frase": {
+        "es": "En mi cumpleaños comí tarta y llovió. ¡La tarta hace llover!",
+        "en": "On my birthday I ate cake and it rained. Cake makes it rain!",
+        "fr": "Pour mon anniversaire, j’ai mangé du gâteau et il a plu. Le gâteau fait pleuvoir !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Llovió por las nubes, no por la tarta",
+            "en": "It rained because of the clouds, not the cake",
+            "fr": "Il a plu à cause des nuages, pas du gâteau"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "La tarta es una nube",
+            "en": "The cake is a cloud",
+            "fr": "Le gâteau est un nuage"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "En los cumpleaños nunca llueve",
+            "en": "It never rains on birthdays",
+            "fr": "Il ne pleut jamais aux anniversaires"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Claro! La lluvia viene de las nubes.",
+        "en": "Of course! Rain comes from the clouds.",
+        "fr": "Bien sûr ! La pluie vient des nuages."
+      }
+    },
+    {
+      "id": "co7",
+      "gusto": "comida",
+      "tipo": "generalizar",
+      "escena": "🌶️🥣",
+      "frase": {
+        "es": "Probé una salsa y picaba muchísimo. ¡Todas las salsas pican!",
+        "en": "I tried a sauce and it was very spicy. All sauces are spicy!",
+        "fr": "J’ai goûté une sauce et elle piquait beaucoup. Toutes les sauces piquent !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Algunas salsas pican, pero muchas no",
+            "en": "Some sauces are spicy, but many are not",
+            "fr": "Certaines sauces piquent, mais beaucoup ne piquent pas"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las salsas son dulces como caramelos",
+            "en": "Sauces are as sweet as sweets",
+            "fr": "Les sauces sont sucrées comme des bonbons"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Ninguna salsa pica",
+            "en": "No sauce is spicy",
+            "fr": "Aucune sauce ne pique"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ahora lo sé! Probar una no me dice cómo son todas.",
+        "en": "Now I know! Trying one doesn’t tell me what they are all like.",
+        "fr": "Maintenant, je sais ! En goûter une ne me dit pas comment elles sont toutes."
+      }
+    },
+    {
+      "id": "co8",
+      "gusto": "comida",
+      "tipo": "generalizar",
+      "escena": "🍋🍌",
+      "frase": {
+        "es": "Probé un limón y estaba muy ácido. ¡Toda la fruta es ácida!",
+        "en": "I tried a lemon and it was very sour. All fruit is sour!",
+        "fr": "J’ai goûté un citron et il était très acide. Tous les fruits sont acides !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "El limón es ácido, pero el plátano es dulce",
+            "en": "Lemons are sour, but bananas are sweet",
+            "fr": "Le citron est acide, mais la banane est sucrée"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los limones son dulces",
+            "en": "Lemons are sweet",
+            "fr": "Les citrons sont sucrés"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "La fruta no sabe a nada",
+            "en": "Fruit tastes of nothing",
+            "fr": "Les fruits n’ont aucun goût"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ya lo entiendo! Una fruta no me dice cómo son todas.",
+        "en": "I understand! One fruit doesn’t tell me what all fruit is like.",
+        "fr": "J’ai compris ! Un seul fruit ne me dit pas comment sont tous les fruits."
+      }
+    },
+    {
+      "id": "co9",
+      "gusto": "comida",
+      "tipo": "alReves",
+      "escena": "🍎🍌",
+      "frase": {
+        "es": "Todas las manzanas son fruta. El plátano es fruta… ¡El plátano es una manzana!",
+        "en": "All apples are fruit. A banana is fruit… The banana is an apple!",
+        "fr": "Toutes les pommes sont des fruits. La banane est un fruit… La banane est une pomme !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Todas las manzanas son fruta, pero no toda la fruta es manzana",
+            "en": "All apples are fruit, but not all fruit is apples",
+            "fr": "Toutes les pommes sont des fruits, mais les fruits ne sont pas tous des pommes"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "El plátano no es fruta",
+            "en": "A banana is not fruit",
+            "fr": "La banane n’est pas un fruit"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Las manzanas son verduras",
+            "en": "Apples are vegetables",
+            "fr": "Les pommes sont des légumes"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Entendido! Ser fruta no te hace manzana.",
+        "en": "Got it! Being fruit does not make you an apple.",
+        "fr": "Compris ! Être un fruit ne fait pas de toi une pomme."
+      }
+    },
+    {
+      "id": "co10",
+      "gusto": "comida",
+      "tipo": "alReves",
+      "escena": "🍕🍞",
+      "frase": {
+        "es": "Todas las pizzas llevan masa. El pan lleva masa… ¡El pan es una pizza!",
+        "en": "All pizzas have dough. Bread has dough… Bread is a pizza!",
+        "fr": "Toutes les pizzas ont de la pâte. Le pain a de la pâte… Le pain est une pizza !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Llevar masa no convierte al pan en pizza",
+            "en": "Having dough does not turn bread into pizza",
+            "fr": "Avoir de la pâte ne transforme pas le pain en pizza"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "La pizza no lleva masa",
+            "en": "Pizza has no dough",
+            "fr": "La pizza n’a pas de pâte"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "El pan siempre lleva queso",
+            "en": "Bread always has cheese",
+            "fr": "Le pain a toujours du fromage"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Ah, claro! La regla no funciona al revés.",
+        "en": "Ah, of course! The rule does not work the other way round.",
+        "fr": "Ah, bien sûr ! La règle ne marche pas à l’envers."
+      }
+    },
+    {
+      "id": "co11",
+      "gusto": "comida",
+      "tipo": "ninguno",
+      "escena": "🌾🍞",
+      "frase": {
+        "es": "Este pan se hace con harina de trigo. La harina de trigo sale del trigo… ¡Este pan viene del trigo!",
+        "en": "This bread is made with wheat flour. Wheat flour comes from wheat… This bread comes from wheat!",
+        "fr": "Ce pain est fait avec de la farine de blé. La farine de blé vient du blé… Ce pain vient du blé !"
+      },
+      "aprende": {
+        "es": "¡Bien! Esta vez he pensado bien.",
+        "en": "Great! This time I thought it through.",
+        "fr": "Super ! Cette fois, j’ai bien réfléchi."
+      }
+    },
+    {
+      "id": "co12",
+      "gusto": "comida",
+      "tipo": "ninguno",
+      "escena": "🧊☀️",
+      "frase": {
+        "es": "El hielo se derrite con el calor. Si dejo un cubito al sol, se derretirá.",
+        "en": "Ice melts in the heat. If I leave an ice cube in the sun, it will melt.",
+        "fr": "La glace fond avec la chaleur. Si je laisse un glaçon au soleil, il va fondre."
+      },
+      "aprende": {
+        "es": "¡Eso es! Tenía sentido.",
+        "en": "That’s it! It made sense.",
+        "fr": "C’est ça ! Ça avait du sens."
+      }
+    },
+    {
+      "id": "co13",
+      "gusto": "comida",
+      "tipo": "ninguno",
+      "escena": "🍌✅",
+      "frase": {
+        "es": "Los plátanos amarillos están maduros. Este plátano está amarillo… ¡Está maduro!",
+        "en": "Yellow bananas are ripe. This banana is yellow… It is ripe!",
+        "fr": "Les bananes jaunes sont mûres. Cette banane est jaune… Elle est mûre !"
+      },
+      "aprende": {
+        "es": "¡Bien! Esta vez he razonado bien.",
+        "en": "Great! This time I reasoned well.",
+        "fr": "Super ! Cette fois, j’ai bien raisonné."
+      }
+    },
+    {
+      "id": "rg-af",
+      "gusto": "animales",
+      "tipo": "ninguno",
+      "regiones": [
+        "africa"
+      ],
+      "escena": "🐘💧",
+      "frase": {
+        "es": "Los elefantes necesitan beber mucha agua. Por eso van al río cada día.",
+        "en": "Elephants need to drink lots of water. That is why they go to the river every day.",
+        "fr": "Les éléphants doivent boire beaucoup d’eau. C’est pour ça qu’ils vont à la rivière tous les jours."
+      },
+      "aprende": {
+        "es": "¡Bien! Van al río porque necesitan agua.",
+        "en": "Great! They go to the river because they need water.",
+        "fr": "Super ! Ils vont à la rivière parce qu’ils ont besoin d’eau."
+      }
+    },
+    {
+      "id": "rg-am",
+      "gusto": "comida",
+      "tipo": "falsaCausa",
+      "regiones": [
+        "america"
+      ],
+      "escena": "🌽🌧️",
+      "frase": {
+        "es": "Planté maíz y al día siguiente llovió. ¡Plantar maíz hace llover!",
+        "en": "I planted corn and the next day it rained. Planting corn makes it rain!",
+        "fr": "J’ai planté du maïs et le lendemain il a plu. Planter du maïs fait pleuvoir !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Llovió por las nubes, no por el maíz",
+            "en": "It rained because of the clouds, not the corn",
+            "fr": "Il a plu à cause des nuages, pas du maïs"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "El maíz es una nube",
+            "en": "Corn is a cloud",
+            "fr": "Le maïs est un nuage"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "El maíz no se puede plantar",
+            "en": "You can’t plant corn",
+            "fr": "On ne peut pas planter de maïs"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Claro! El maíz necesita la lluvia, pero no la trae.",
+        "en": "Of course! Corn needs rain, but it does not bring it.",
+        "fr": "Bien sûr ! Le maïs a besoin de la pluie, mais il ne la fait pas venir."
+      }
+    },
+    {
+      "id": "rg-as",
+      "gusto": "comida",
+      "tipo": "ninguno",
+      "regiones": [
+        "asia"
+      ],
+      "escena": "🌾💧",
+      "frase": {
+        "es": "El arroz necesita mucha agua para crecer. Por eso los campos de arroz están llenos de agua.",
+        "en": "Rice needs lots of water to grow. That is why rice fields are full of water.",
+        "fr": "Le riz a besoin de beaucoup d’eau pour pousser. C’est pour ça que les rizières sont pleines d’eau."
+      },
+      "aprende": {
+        "es": "¡Eso es! Tenía sentido.",
+        "en": "That’s it! It made sense.",
+        "fr": "C’est ça ! Ça avait du sens."
+      }
+    },
+    {
+      "id": "rg-eu",
+      "gusto": "deporte",
+      "tipo": "generalizar",
+      "regiones": [
+        "europa"
+      ],
+      "escena": "🚴🏔️",
+      "frase": {
+        "es": "Subí una montaña en bici y me cansé mucho. ¡Ir en bici siempre cansa muchísimo!",
+        "en": "I rode my bike up a mountain and got very tired. Cycling is always very tiring!",
+        "fr": "J’ai monté une montagne à vélo et j’étais très fatigué. Le vélo fatigue toujours énormément !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Subir una montaña cansa, pero en llano se va fácil",
+            "en": "Riding up a mountain is tiring, but on flat ground it is easy",
+            "fr": "Monter une montagne fatigue, mais sur le plat c’est facile"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Las bicis no tienen ruedas",
+            "en": "Bikes have no wheels",
+            "fr": "Les vélos n’ont pas de roues"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Las montañas son planas",
+            "en": "Mountains are flat",
+            "fr": "Les montagnes sont plates"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Entendido! Una vez difícil no quiere decir siempre difícil.",
+        "en": "Got it! Hard once does not mean hard every time.",
+        "fr": "Compris ! Difficile une fois ne veut pas dire difficile toujours."
+      }
+    },
+    {
+      "id": "rg-oc",
+      "gusto": "animales",
+      "tipo": "parecido",
+      "regiones": [
+        "oceania"
+      ],
+      "escena": "🦘⚽",
+      "frase": {
+        "es": "Mi pelota da saltos muy altos, como un canguro… ¡Mi pelota es un canguro!",
+        "en": "My ball bounces really high, like a kangaroo… My ball is a kangaroo!",
+        "fr": "Mon ballon fait des bonds très hauts, comme un kangourou… Mon ballon est un kangourou !"
+      },
+      "opciones": [
+        {
+          "texto": {
+            "es": "Dar saltos altos no te convierte en canguro",
+            "en": "Bouncing high does not make you a kangaroo",
+            "fr": "Faire des bonds ne fait pas de toi un kangourou"
+          },
+          "correcta": true
+        },
+        {
+          "texto": {
+            "es": "Los canguros no saltan",
+            "en": "Kangaroos do not jump",
+            "fr": "Les kangourous ne sautent pas"
+          },
+          "correcta": false
+        },
+        {
+          "texto": {
+            "es": "Las pelotas tienen patas",
+            "en": "Balls have legs",
+            "fr": "Les ballons ont des pattes"
+          },
+          "correcta": false
+        }
+      ],
+      "aprende": {
+        "es": "¡Vale! Se parecen en el salto, pero no son lo mismo.",
+        "en": "Okay! They both jump, but they are not the same.",
+        "fr": "D’accord ! Ils sautent tous les deux, mais ce n’est pas pareil."
+      }
+    }
+  ]
+}

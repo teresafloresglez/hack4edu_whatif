@@ -1,0 +1,527 @@
+{
+  "demoBadge": {
+    "es": "Datos de demostración",
+    "en": "Demo data",
+    "fr": "Données de démonstration"
+  },
+  "meta": {
+    "es": "{age} años · {region} · {games} partidas · {min} min de juego",
+    "en": "{age} years old · {region} · {games} games · {min} min of play",
+    "fr": "{age} ans · {region} · {games} parties · {min} min de jeu"
+  },
+  "reportDate": {
+    "es": "Informe del {date}",
+    "en": "Report of {date}",
+    "fr": "Rapport du {date}"
+  },
+  "project": {
+    "es": "Proyecto: {theme} · fase {n} de 5 ({phase})",
+    "en": "Project: {theme} · phase {n} of 5 ({phase})",
+    "fr": "Projet : {theme} · phase {n} sur 5 ({phase})"
+  },
+  "fewGames": {
+    "es": "Aún hay pocas partidas: el perfil es orientativo y se irá completando.",
+    "en": "There are still few games: the profile is a guide and will fill in over time.",
+    "fr": "Il y a encore peu de parties : le profil est indicatif et se complètera."
+  },
+  "critHeader": {
+    "es": "* Criterio: la edad ajusta la puntuación; la originalidad se compara con niños del mismo continente.",
+    "en": "* Criterion: age adjusts the score; originality is compared with children from the same continent.",
+    "fr": "* Critère : l’âge ajuste le score ; l’originalité est comparée aux enfants du même continent."
+  },
+  "sumTitle": {
+    "es": "Lo más importante",
+    "en": "The key points",
+    "fr": "L’essentiel"
+  },
+  "sumStrengths": {
+    "es": "Fortalezas",
+    "en": "Strengths",
+    "fr": "Points forts"
+  },
+  "sumGrowth": {
+    "es": "Áreas en crecimiento",
+    "en": "Growth areas",
+    "fr": "Points à développer"
+  },
+  "sumAction": {
+    "es": "Acción sugerida",
+    "en": "Suggested action",
+    "fr": "Action suggérée"
+  },
+  "sumNoStrengths": {
+    "es": "Aún ninguna destacada.",
+    "en": "None stands out yet.",
+    "fr": "Aucun ne ressort encore."
+  },
+  "sumNoGrowth": {
+    "es": "Ninguna por ahora.",
+    "en": "None for now.",
+    "fr": "Aucun pour l’instant."
+  },
+  "sumNoAction": {
+    "es": "Seguir jugando: con más partidas aparecerá una acción concreta.",
+    "en": "Keep playing: with more games a specific action will appear.",
+    "fr": "Continuer à jouer : avec plus de parties, une action concrète apparaîtra."
+  },
+  "critSummary": {
+    "es": "* Criterio: fortaleza = 70 o más; área en crecimiento = menos de 40; con al menos 2 partidas. No se compara con otros niños.",
+    "en": "* Criterion: strength = 70 or more; growth area = below 40; with at least 2 games. Not compared with other children.",
+    "fr": "* Critère : point fort = 70 ou plus ; point à développer = moins de 40 ; avec au moins 2 parties. Pas de comparaison avec d’autres enfants."
+  },
+  "profileTitle": {
+    "es": "Perfil por dimensiones",
+    "en": "Profile by dimension",
+    "fr": "Profil par dimension"
+  },
+  "legend": {
+    "es": "Escala 0–100 · Punto fuerte: 70 o más · En desarrollo: 40–69 · En crecimiento: menos de 40 · ↗ ↘ mejora o baja más de 8 puntos en sus últimas partidas.",
+    "en": "Scale 0–100 · Strength: 70 or more · Developing: 40–69 · Growing: below 40 · ↗ ↘ up or down more than 8 points in recent games.",
+    "fr": "Échelle 0–100 · Point fort : 70 ou plus · En développement : 40–69 · À développer : moins de 40 · ↗ ↘ hausse ou baisse de plus de 8 points sur ses dernières parties."
+  },
+  "trendUp": {
+    "es": "↗ mejora",
+    "en": "↗ improving",
+    "fr": "↗ en progrès"
+  },
+  "trendDown": {
+    "es": "↘ baja",
+    "en": "↘ dropping",
+    "fr": "↘ en baisse"
+  },
+  "noDataDims": {
+    "es": "Aún sin datos: {list}.",
+    "en": "No data yet: {list}.",
+    "fr": "Pas encore de données : {list}."
+  },
+  "pilot": {
+    "es": "Los valores de referencia por edad son hipótesis iniciales que se recalcularán con un piloto.",
+    "en": "The reference values by age are initial hypotheses that will be recalculated with a pilot.",
+    "fr": "Les valeurs de référence par âge sont des hypothèses de départ qui seront recalculées lors d’un pilote."
+  },
+  "critProfile": {
+    "es": "* Criterio: media de todas sus partidas, con más peso a las recientes y ajustada a su edad. Sin cifra hasta tener 2 partidas. El niño nunca la ve.",
+    "en": "* Criterion: average of all their games, weighting recent ones more and adjusted to age. No number until 2 games. The child never sees it.",
+    "fr": "* Critère : moyenne de toutes ses parties, plus de poids aux récentes et ajustée à l’âge. Pas de chiffre avant 2 parties. L’enfant ne le voit jamais."
+  },
+  "classTitle": {
+    "es": "Qué hacer en el aula",
+    "en": "What to do in class",
+    "fr": "Que faire en classe"
+  },
+  "observeSub": {
+    "es": "Para observar",
+    "en": "To observe",
+    "fr": "À observer"
+  },
+  "recSub": {
+    "es": "Para trabajar",
+    "en": "To work on",
+    "fr": "À travailler"
+  },
+  "classNothing": {
+    "es": "Nada destacado por ahora.",
+    "en": "Nothing to highlight for now.",
+    "fr": "Rien à signaler pour l’instant."
+  },
+  "inApp": {
+    "es": "En la app: {games}.",
+    "en": "In the app: {games}.",
+    "fr": "Dans l’appli : {games}."
+  },
+  "critClass": {
+    "es": "* Criterio: pistas que salen de patrones repetidos, nunca de una sola partida. No son un diagnóstico.",
+    "en": "* Criterion: clues from repeated patterns, never from a single game. Not a diagnosis.",
+    "fr": "* Critère : pistes issues de régularités répétées, jamais d’une seule partie. Pas un diagnostic."
+  },
+  "howTitle": {
+    "es": "Cómo trabaja",
+    "en": "How they work",
+    "fr": "Comment il travaille"
+  },
+  "conflictSub": {
+    "es": "Ante un conflicto",
+    "en": "In a conflict",
+    "fr": "Face à un conflit"
+  },
+  "noOrange": {
+    "es": "Aún no ha jugado a La naranja.",
+    "en": "Hasn’t played The orange yet.",
+    "fr": "N’a pas encore joué à L’orange."
+  },
+  "styleCompetir": {
+    "es": "Compite",
+    "en": "Competes",
+    "fr": "Rivalise"
+  },
+  "styleCeder": {
+    "es": "Cede",
+    "en": "Gives in",
+    "fr": "Cède"
+  },
+  "styleCompromiso": {
+    "es": "Llega a un acuerdo a medias",
+    "en": "Meets halfway",
+    "fr": "Coupe la poire en deux"
+  },
+  "styleEvitar": {
+    "es": "Lo evita",
+    "en": "Avoids it",
+    "fr": "L’évite"
+  },
+  "styleIntegrar": {
+    "es": "Busca una solución para los dos",
+    "en": "Looks for a solution for both",
+    "fr": "Cherche une solution pour les deux"
+  },
+  "cheatSub": {
+    "es": "Si el otro reparte injustamente",
+    "en": "If the other shares unfairly",
+    "fr": "Si l’autre partage injustement"
+  },
+  "cheatCastiga": {
+    "es": "Ofrece menos la vez siguiente",
+    "en": "Offers less next time",
+    "fr": "Offre moins la fois suivante"
+  },
+  "cheatPerdona": {
+    "es": "Sigue ofreciendo lo mismo",
+    "en": "Keeps offering the same",
+    "fr": "Continue à offrir pareil"
+  },
+  "cheatCopia": {
+    "es": "Le devuelve el mismo trato",
+    "en": "Pays them back the same way",
+    "fr": "Lui rend la pareille"
+  },
+  "times": {
+    "es": "{n} vez",
+    "en": "{n} time",
+    "fr": "{n} fois"
+  },
+  "timesPl": {
+    "es": "{n} veces",
+    "en": "{n} times",
+    "fr": "{n} fois"
+  },
+  "workSub": {
+    "es": "Forma de trabajar",
+    "en": "Way of working",
+    "fr": "Façon de travailler"
+  },
+  "notEnough": {
+    "es": "Aún sin datos suficientes.",
+    "en": "Not enough data yet.",
+    "fr": "Pas encore assez de données."
+  },
+  "critHow": {
+    "es": "* Criterio: % de veces que elige cada estilo (ninguno es mejor); tiempo antes de empezar y uso de pistas.",
+    "en": "* Criterion: % of times they choose each style (none is better); time before starting and use of hints.",
+    "fr": "* Critère : % de fois où il choisit chaque style (aucun n’est meilleur) ; temps avant de commencer et usage des indices."
+  },
+  "progressTitle": {
+    "es": "Progreso",
+    "en": "Progress",
+    "fr": "Progrès"
+  },
+  "levelsSub": {
+    "es": "Nivel actual (1 a 5)",
+    "en": "Current level (1 to 5)",
+    "fr": "Niveau actuel (1 à 5)"
+  },
+  "recentSub": {
+    "es": "Últimas partidas",
+    "en": "Latest games",
+    "fr": "Dernières parties"
+  },
+  "olderGames": {
+    "es": "Ver {n} partidas anteriores",
+    "en": "Show {n} earlier games",
+    "fr": "Voir {n} parties précédentes"
+  },
+  "colDate": {
+    "es": "Fecha",
+    "en": "Date",
+    "fr": "Date"
+  },
+  "colGame": {
+    "es": "Juego",
+    "en": "Game",
+    "fr": "Jeu"
+  },
+  "colLevel": {
+    "es": "Nivel",
+    "en": "Level",
+    "fr": "Niveau"
+  },
+  "colStars": {
+    "es": "Estrellas",
+    "en": "Stars",
+    "fr": "Étoiles"
+  },
+  "abandoned": {
+    "es": "(abandonada)",
+    "en": "(abandoned)",
+    "fr": "(abandonnée)"
+  },
+  "noGames": {
+    "es": "Sin partidas todavía.",
+    "en": "No games yet.",
+    "fr": "Pas encore de parties."
+  },
+  "critProgress": {
+    "es": "* Criterio: empieza en nivel 1, 2 o 3 según su edad; 2 logros seguidos suben uno y un fallo baja uno. Estrellas: participar, terminar y mejorar su marca.",
+    "en": "* Criterion: starts at level 1, 2 or 3 depending on age; 2 successes in a row go up one, a failure goes down one. Stars: taking part, finishing and beating their record.",
+    "fr": "* Critère : commence au niveau 1, 2 ou 3 selon l’âge ; 2 réussites d’affilée font monter d’un, un échec fait descendre d’un. Étoiles : participer, finir et battre son record."
+  },
+  "evidenceTitle": {
+    "es": "Evidencias",
+    "en": "Evidence",
+    "fr": "Traces"
+  },
+  "ideasChosen": {
+    "es": "Ideas que eligió",
+    "en": "Ideas they chose",
+    "fr": "Idées choisies"
+  },
+  "ownIdeas": {
+    "es": "+ {n} grabada(s)",
+    "en": "+ {n} recorded",
+    "fr": "+ {n} enregistrée(s)"
+  },
+  "drawings": {
+    "es": "Dibujos",
+    "en": "Drawings",
+    "fr": "Dessins"
+  },
+  "voice": {
+    "es": "Ideas dichas por voz",
+    "en": "Ideas said out loud",
+    "fr": "Idées dites à voix haute"
+  },
+  "audioPrint": {
+    "es": "Audio: se escucha en la app.",
+    "en": "Audio: listen in the app.",
+    "fr": "Audio : à écouter dans l’appli."
+  },
+  "audioMissing": {
+    "es": "La grabación ya no está en este dispositivo.",
+    "en": "The recording is no longer on this device.",
+    "fr": "L’enregistrement n’est plus sur cet appareil."
+  },
+  "noEvidence": {
+    "es": "Aún no hay producciones guardadas.",
+    "en": "No saved work yet.",
+    "fr": "Pas encore de productions enregistrées."
+  },
+  "critEvidence": {
+    "es": "* Criterio: producciones reales para contrastar el perfil; el dibujo y el audio en sí no se puntúan.",
+    "en": "* Criterion: real work to check the profile against; the drawing and audio themselves are not scored.",
+    "fr": "* Critère : productions réelles pour vérifier le profil ; le dessin et l’audio eux-mêmes ne sont pas notés."
+  },
+  "basisLabel": {
+    "es": "Se apoya en",
+    "en": "Based on",
+    "fr": "S’appuie sur"
+  },
+  "noDataYet": {
+    "es": "sin datos aún",
+    "en": "no data yet",
+    "fr": "pas encore de données"
+  },
+  "pct": {
+    "es": "{label} {n} %",
+    "en": "{label} {n} %",
+    "fr": "{label} {n} %"
+  },
+  "starsAvg": {
+    "es": "{n} estrellas de media por partida",
+    "en": "{n} stars on average per game",
+    "fr": "{n} étoiles en moyenne par partie"
+  },
+  "phaseOf": {
+    "es": "fase {n} de 5",
+    "en": "phase {n} of 5",
+    "fr": "phase {n} sur 5"
+  },
+  "projectsDone": {
+    "es": "{n} proyecto(s) terminado(s)",
+    "en": "{n} project(s) finished",
+    "fr": "{n} projet(s) terminé(s)"
+  },
+  "entryLevel": {
+    "es": "empieza en nivel {n} por su edad",
+    "en": "starts at level {n} for their age",
+    "fr": "commence au niveau {n} vu son âge"
+  },
+  "compareWith": {
+    "es": "comparado con niños de {c}",
+    "en": "compared with children from {c}",
+    "fr": "comparé aux enfants de {c}"
+  },
+  "frames": {
+    "torrance": {
+      "frame": {
+        "es": "Pensamiento divergente",
+        "en": "Divergent thinking",
+        "fr": "Pensée divergente"
+      },
+      "ref": {
+        "es": "Torrance (1966)",
+        "en": "Torrance (1966)",
+        "fr": "Torrance (1966)"
+      }
+    },
+    "abp": {
+      "frame": {
+        "es": "Aprendizaje Basado en Proyectos y pregunta «What if?»",
+        "en": "Project-Based Learning and the “What if?” question",
+        "fr": "Apprentissage par projets et question « What if? »"
+      },
+      "ref": {
+        "es": "enfoque general",
+        "en": "general approach",
+        "fr": "approche générale"
+      }
+    },
+    "pigmalion": {
+      "frame": {
+        "es": "Efecto Pigmalión",
+        "en": "Pygmalion effect",
+        "fr": "Effet Pygmalion"
+      },
+      "ref": {
+        "es": "Rosenthal y Jacobson (1968)",
+        "en": "Rosenthal and Jacobson (1968)",
+        "fr": "Rosenthal et Jacobson (1968)"
+      }
+    },
+    "metacog": {
+      "frame": {
+        "es": "Autorregulación y metacognición",
+        "en": "Self-regulation and metacognition",
+        "fr": "Autorégulation et métacognition"
+      },
+      "ref": {
+        "es": "Zimmerman (2002); Flavell (1979)",
+        "en": "Zimmerman (2002); Flavell (1979)",
+        "fr": "Zimmerman (2002) ; Flavell (1979)"
+      }
+    },
+    "adaptacion": {
+      "frame": {
+        "es": "Adaptación por edad, cultura y nivel",
+        "en": "Adapting to age, culture and level",
+        "fr": "Adaptation à l’âge, à la culture et au niveau"
+      },
+      "ref": {
+        "es": "criterio de diseño de la app",
+        "en": "app design criterion",
+        "fr": "critère de conception de l’appli"
+      }
+    },
+    "ultimatum": {
+      "frame": {
+        "es": "Juego del ultimátum",
+        "en": "Ultimatum game",
+        "fr": "Jeu de l’ultimatum"
+      },
+      "ref": {
+        "es": "Güth, Schmittberger y Schwarze (1982)",
+        "en": "Güth, Schmittberger and Schwarze (1982)",
+        "fr": "Güth, Schmittberger et Schwarze (1982)"
+      }
+    },
+    "conflicto": {
+      "frame": {
+        "es": "Estilos ante el conflicto",
+        "en": "Conflict styles",
+        "fr": "Styles face au conflit"
+      },
+      "ref": {
+        "es": "Thomas y Kilmann (1974); Fisher y Ury (1981)",
+        "en": "Thomas and Kilmann (1974); Fisher and Ury (1981)",
+        "fr": "Thomas et Kilmann (1974) ; Fisher et Ury (1981)"
+      }
+    },
+    "robi": {
+      "frame": {
+        "es": "Aprender enseñando y pensamiento crítico",
+        "en": "Learning by teaching and critical thinking",
+        "fr": "Apprendre en enseignant et pensée critique"
+      },
+      "ref": {
+        "es": "Chase, Chin, Oppezzo y Schwartz (2009); IA adaptativa en el dispositivo",
+        "en": "Chase, Chin, Oppezzo and Schwartz (2009); adaptive AI on the device",
+        "fr": "Chase, Chin, Oppezzo et Schwartz (2009) ; IA adaptative sur l’appareil"
+      }
+    }
+  },
+  "finalNote": {
+    "es": "Nota sobre los datos. Se calculan automáticamente a partir de las partidas, con las reglas de cada apartado. El informe es orientativo: no es un diagnóstico ni sirve para calificar. Los datos se guardan solo en este dispositivo; la app no tiene servidor propio ni los usa para otro fin.",
+    "en": "Note on the data. They are calculated automatically from the games, using each section’s rules. The report is a guide: it is not a diagnosis and is not used for grading. Data are stored only on this device; the app has no server of its own and does not use them for anything else.",
+    "fr": "Note sur les données. Elles sont calculées automatiquement à partir des parties, selon les règles de chaque rubrique. Le rapport est indicatif : ce n’est pas un diagnostic et il ne sert pas à noter. Les données restent sur cet appareil ; l’appli n’a pas de serveur propre et ne les utilise à aucune autre fin."
+  },
+  "stylesUsed": {
+    "es": "usa {n} de 5 estilos",
+    "en": "uses {n} of 5 styles",
+    "fr": "utilise {n} styles sur 5"
+  },
+  "overviewTitle": {
+    "es": "Competencias de un vistazo",
+    "en": "Skills at a glance",
+    "fr": "Compétences en un coup d’œil"
+  },
+  "overviewNote": {
+    "es": "Media de las dimensiones de cada competencia que ya tienen datos.",
+    "en": "Average of each skill’s dimensions that already have data.",
+    "fr": "Moyenne des dimensions de chaque compétence qui ont déjà des données."
+  },
+  "detailTitle": {
+    "es": "Detalle por competencia",
+    "en": "Detail by skill",
+    "fr": "Détail par compétence"
+  },
+  "noDataShort": {
+    "es": "Sin datos aún",
+    "en": "No data yet",
+    "fr": "Pas encore de données"
+  },
+  "areaInfo": {
+    "concreto": {
+      "es": "Fijarse en los detalles y recordar lo que ve",
+      "en": "Noticing details and remembering what they see",
+      "fr": "Remarquer les détails et retenir ce qu’il voit"
+    },
+    "logico": {
+      "es": "Descubrir reglas y planificar los pasos",
+      "en": "Finding rules and planning the steps",
+      "fr": "Trouver des règles et planifier les étapes"
+    },
+    "creatividad": {
+      "es": "Tener muchas ideas, variadas y propias",
+      "en": "Having many varied ideas of their own",
+      "fr": "Avoir beaucoup d’idées variées et personnelles"
+    },
+    "social": {
+      "es": "Repartir con justicia y entender a los demás",
+      "en": "Sharing fairly and understanding others",
+      "fr": "Partager avec justice et comprendre les autres"
+    },
+    "autorregulacion": {
+      "es": "Controlar su forma de trabajar y conocerse",
+      "en": "Managing how they work and knowing themselves",
+      "fr": "Gérer sa façon de travailler et se connaître"
+    }
+  },
+  "robiLast": {
+    "es": "última partida: practicó {t} (dominio {p} %)",
+    "en": "last game: practised {t} (mastery {p} %)",
+    "fr": "dernière partie : a travaillé {t} (maîtrise {p} %)"
+  },
+  "robiType": {
+    "es": "{t} {ok}/{n}",
+    "en": "{t} {ok}/{n}",
+    "fr": "{t} {ok}/{n}"
+  }
+}
